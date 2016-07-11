@@ -52,20 +52,26 @@
         <sprite>sprites\sSwitch</sprite>
         <sprite>sprites\sDoor</sprite>
       </sprites>
-      <sprites name="Chests">
-        <sprite>sprites\sSmallChest</sprite>
-      </sprites>
       <sprites name="Shrines">
         <sprite>sprites\sShrine_Forest</sprite>
         <sprite>sprites\sAreaCheckpoint</sprite>
       </sprites>
-      <sprite>sprites\sLadder</sprite>
-      <sprite>sprites\sArrowSegment</sprite>
-      <sprite>sprites\sGoldCoin</sprite>
-      <sprite>sprites\sVine</sprite>
-      <sprite>sprites\sLayerDoor</sprite>
-      <sprite>sprites\sRockWall</sprite>
-      <sprite>sprites\sSignPost</sprite>
+      <sprites name="Interactables">
+        <sprites name="Collectables">
+          <sprite>sprites\sArrowSegment</sprite>
+          <sprite>sprites\sGoldCoin</sprite>
+        </sprites>
+        <sprites name="Chests">
+          <sprite>sprites\sSmallChest</sprite>
+        </sprites>
+        <sprite>sprites\sLadder</sprite>
+        <sprite>sprites\sVine</sprite>
+        <sprite>sprites\sSignPost</sprite>
+        <sprite>sprites\sLayerDoor</sprite>
+      </sprites>
+      <sprites name="Obstacles">
+        <sprite>sprites\sRockWall</sprite>
+      </sprites>
     </sprites>
     <sprites name="UserInterface">
       <sprites name="HudOverlay">
@@ -82,17 +88,19 @@
         <sprite>sprites\sIOHeartContainer</sprite>
         <sprite>sprites\sIOIcons</sprite>
         <sprite>sprites\sToast</sprite>
+        <sprite>sprites\sItemIcons16</sprite>
+        <sprite>sprites\sItemIcons24</sprite>
       </sprites>
       <sprites name="Portraits">
         <sprite>sprites\sPortraitProtagonist</sprite>
         <sprite>sprites\sPortraitSignpost</sprite>
         <sprite>sprites\sPortrait_ShrineForest</sprite>
       </sprites>
+      <sprites name="Dialogue">
+        <sprite>sprites\sDialogueQuoteMark</sprite>
+        <sprite>sprites\sDialogueFinishMarker</sprite>
+      </sprites>
       <sprite>sprites\sCursor</sprite>
-      <sprite>sprites\sItemIcons16</sprite>
-      <sprite>sprites\sItemIcons24</sprite>
-      <sprite>sprites\sDialogueQuoteMark</sprite>
-      <sprite>sprites\sDialogueFinishMarker</sprite>
       <sprite>sprites\sHudCheckmark</sprite>
     </sprites>
     <sprites name="Effects">
@@ -209,25 +217,6 @@
         </scripts>
         <script>scripts\SpawnItem.gml</script>
       </scripts>
-      <scripts name="Dialogue">
-        <script>scripts\CreateDialogue.gml</script>
-        <script>scripts\AddDialogue.gml</script>
-        <script>scripts\AddDialogueScript.gml</script>
-        <script>scripts\AddDialogueOptions.gml</script>
-        <script>scripts\AddDialogueOptionsList.gml</script>
-      </scripts>
-      <scripts name="Shop">
-        <scripts name="Dialogue">
-          <script>scripts\oShop_IntroMessage.gml</script>
-          <script>scripts\oShop_PrimaryMenu.gml</script>
-          <script>scripts\oShop_BuyItemMenu.gml</script>
-          <script>scripts\oShop_TalkMenu.gml</script>
-        </scripts>
-        <script>scripts\CreateShop.gml</script>
-        <script>scripts\AddShopItem.gml</script>
-        <script>scripts\AddShopTalkExt.gml</script>
-        <script>scripts\AddShopTalk.gml</script>
-      </scripts>
       <scripts name="Checkpoints">
         <scripts name="Shrine">
           <script>scripts\oShrine_PrimaryMenu.gml</script>
@@ -238,11 +227,34 @@
         <script>scripts\SetCheckpoint.gml</script>
         <script>scripts\RespawnToCheckpoint.gml</script>
       </scripts>
+      <scripts name="Overlay">
+        <scripts name="Dialogue">
+          <script>scripts\CreateDialogue.gml</script>
+          <script>scripts\AddDialogue.gml</script>
+          <script>scripts\AddDialogueScript.gml</script>
+          <script>scripts\AddDialogueOptions.gml</script>
+          <script>scripts\AddDialogueOptionsList.gml</script>
+        </scripts>
+        <scripts name="Shop">
+          <scripts name="Dialogue">
+            <script>scripts\oShop_IntroMessage.gml</script>
+            <script>scripts\oShop_PrimaryMenu.gml</script>
+            <script>scripts\oShop_BuyItemMenu.gml</script>
+            <script>scripts\oShop_TalkMenu.gml</script>
+          </scripts>
+          <script>scripts\CreateShop.gml</script>
+          <script>scripts\AddShopItem.gml</script>
+          <script>scripts\AddShopTalkExt.gml</script>
+          <script>scripts\AddShopTalk.gml</script>
+        </scripts>
+        <scripts name="Toasts">
+          <script>scripts\ToastItem.gml</script>
+          <script>scripts\ToastArea.gml</script>
+          <script>scripts\ToastCheckpoint.gml</script>
+          <script>scripts\NotifyInteraction.gml</script>
+        </scripts>
+      </scripts>
       <script>scripts\CalculateSmoothAngle.gml</script>
-      <script>scripts\ToastItem.gml</script>
-      <script>scripts\NotifyInteraction.gml</script>
-      <script>scripts\ToastArea.gml</script>
-      <script>scripts\ToastCheckpoint.gml</script>
     </scripts>
     <scripts name="Effects">
       <scripts name="Database">
@@ -349,14 +361,20 @@
         <object>objects\oFloorSwitch</object>
         <object>objects\oDoor</object>
       </objects>
-      <object>objects\oArrowSegment</object>
-      <object>objects\oGoldCoin</object>
-      <object>objects\oItem</object>
-      <object>objects\oChest</object>
-      <object>objects\oLayerDoor</object>
-      <object>objects\oVine</object>
-      <object>objects\oRockWall</object>
-      <object>objects\oSignPost</object>
+      <objects name="Interactable">
+        <objects name="Collectables">
+          <object>objects\oArrowSegment</object>
+          <object>objects\oGoldCoin</object>
+          <object>objects\oItem</object>
+        </objects>
+        <object>objects\oSignPost</object>
+        <object>objects\oChest</object>
+        <object>objects\oVine</object>
+        <object>objects\oLayerDoor</object>
+      </objects>
+      <objects name="Obstacles">
+        <object>objects\oRockWall</object>
+      </objects>
       <object>objects\oShrine</object>
       <object>objects\oAreaCheckpoint</object>
     </objects>
