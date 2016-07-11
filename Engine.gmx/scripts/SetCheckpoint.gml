@@ -4,5 +4,7 @@
 {
     global.checkpointRoom = room;
     global.checkpointInstanceId = id;
+    
+    ToastCheckpoint();
 }
 

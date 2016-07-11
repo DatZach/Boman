@@ -93,6 +93,7 @@
       <sprite>sprites\sItemIcons24</sprite>
       <sprite>sprites\sDialogueQuoteMark</sprite>
       <sprite>sprites\sDialogueFinishMarker</sprite>
+      <sprite>sprites\sHudCheckmark</sprite>
     </sprites>
     <sprites name="Effects">
       <sprite>sprites\sFxSmoke</sprite>
@@ -241,6 +242,7 @@
       <script>scripts\ToastItem.gml</script>
       <script>scripts\NotifyInteraction.gml</script>
       <script>scripts\ToastArea.gml</script>
+      <script>scripts\ToastCheckpoint.gml</script>
     </scripts>
     <scripts name="Effects">
       <scripts name="Database">
@@ -307,6 +309,7 @@
         <object>objects\oShop</object>
         <object>objects\oAreaToast</object>
         <object>objects\oDeathOverlay</object>
+        <object>objects\oCheckpointToast</object>
       </objects>
       <objects name="Weapons">
         <object>objects\oWeaponBomb</object>
