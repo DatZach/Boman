@@ -83,13 +83,16 @@
         <sprite>sprites\sInteractIcons18</sprite>
         <sprite>sprites\sHudKey</sprite>
       </sprites>
-      <sprites name="ItemsOverlay">
+      <sprites name="TABOverlay">
         <sprite>sprites\sIOItemRuby</sprite>
         <sprite>sprites\sIOHeartContainer</sprite>
         <sprite>sprites\sIOIcons</sprite>
         <sprite>sprites\sToast</sprite>
         <sprite>sprites\sItemIcons16</sprite>
         <sprite>sprites\sItemIcons24</sprite>
+        <sprite>sprites\sHudWorldMap</sprite>
+        <sprite>sprites\sHudMapMarker</sprite>
+        <sprite>sprites\sHudMapCell</sprite>
       </sprites>
       <sprites name="Portraits">
         <sprite>sprites\sPortraitProtagonist</sprite>

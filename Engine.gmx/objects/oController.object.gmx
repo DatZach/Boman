@@ -149,6 +149,9 @@ view_enabled = true;
 
 var metadata = GetCurrentRoom();
 
+// Mark this area as visited
+global.visitedTiles[metadata[? 'tile-x'], metadata[? 'tile-y']] = true;
+
 // Toast an area if we haven't visited it before
 if (ds_list_find_index(global.visitedAreas, metadata[? 'group-id']) &lt; 0)
 {

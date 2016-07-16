@@ -1,4 +1,4 @@
-/// RoomAdd(room, group-id, name, flags, level);
+/// RoomAdd(room, group-id, name, flags, tileX, tileY);
 
 {
     // Room Entry
@@ -7,7 +7,8 @@
         entry[? 'group-id'] = argument1;
         entry[? 'name'] = argument2;
         entry[? 'flags'] = argument3;
-        entry[? 'level'] = argument4;
+        entry[? 'tile-x'] = argument4;
+        entry[? 'tile-y'] = argument5;
     ds_map_add(global.rooms, argument0, entry);
     
     // Key Map Entry

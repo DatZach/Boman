@@ -31,6 +31,7 @@ enum HudMenuTab {
     Inventory,
     KnickKnacks,
     Relics,
+    Map,
     Count
 }
 
@@ -454,7 +455,7 @@ for(var i = 0; i &lt; count; ++i)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Draw overlay - Items
+            <string>/// Draw overlay - TAB Menu
 
 if (enabled)
 {
@@ -515,139 +516,285 @@ xx += string_width("Relics");
 xx += 8;
 headerWidths[3] = xx;
 
+draw_sprite(sIOIcons, 3, xx, top);
+xx += sIOIcons_Width + 8;
+draw_text_outline(xx, top + sIOIcons_Height / 2 + 2, "Map", 2, outlineColor, 4);
+xx += string_width("Map");
+xx += 8;
+headerWidths[4] = xx;
+
 draw_set_valign(fa_top);
 
 // Draw item list header line
 draw_set_color(c_white);
 var itemListHeaderLineY = top + sIOIcons_Height + 4;
-draw_line_width(left2, itemListHeaderLineY, xx, itemListHeaderLineY, 2);
+draw_line_width(left2, itemListHeaderLineY, right, itemListHeaderLineY, 2);
 draw_set_color(selectColor);
 draw_line_width(headerWidths[menuTabIndex], itemListHeaderLineY, headerWidths[menuTabIndex + 1] - 8, itemListHeaderLineY, 2);
 draw_set_color(c_white);
 
-if (menuTabIndex != HudMenuTab.Relics)
+switch(menuTabIndex)
 {
-    // Draw inventory
-    var inventory = iff(menuTabIndex == HudMenuTab.Inventory, global.inventory, global.knickKnacks);
-    var itemMenuX = left2 + 5;
-    var itemMenuY = top + sIOIcons_Height + 4 + 6;
-    var itemMenuHeight = bottom - itemRubyHeight + 3 - OFFSET - 20;
-    var inventorySize = ds_list_size(inventory);
-    
-    draw_set_font(fItemOverlay_Item);
-    draw_set_valign(fa_middle);
-    
-    // Highlight selected item
-    if (inventorySize &gt; 0)
+    case HudMenuTab.Inventory:
+    case HudMenuTab.KnickKnacks:
     {
-        var selectedItemIndexY = itemMenuY - 1 + (itemIndex - windowOffset) * 20;
-        draw_set_color(selectColor);
-        draw_set_alpha(intensity / targetIntensity * 0.5);
-        draw_rectangle(left2, selectedItemIndexY, headerWidths[3], selectedItemIndexY + 17, false);
-        draw_set_alpha(intensity * 2);
-        draw_rectangle(left2, selectedItemIndexY, left2 + 2, selectedItemIndexY + 17, false);
-    }
-    
-    draw_set_color(c_white);
-    
-    // Draw items in inventory
-    var i = windowOffset;
-    for(; i &lt; inventorySize &amp;&amp; itemMenuY &lt; itemMenuHeight; ++i)
-    {
-        var item = inventory[| i];
-        var itemMeta = global.dbItems[| item[? 'db-item-index']];
+        // Draw inventory
+        var inventory = iff(menuTabIndex == HudMenuTab.Inventory, global.inventory, global.knickKnacks);
+        var itemMenuX = left2 + 5;
+        var itemMenuY = top + sIOIcons_Height + 4 + 6;
+        var itemMenuHeight = bottom - itemRubyHeight + 3 - OFFSET - 20;
+        var inventorySize = ds_list_size(inventory);
         
-        draw_sprite(sItemIcons16, itemMeta[? 'image-index'], itemMenuX + 8, itemMenuY + 8);
-        draw_text(itemMenuX + 16 + 5, itemMenuY + 9, itemMeta[? 'name']);
+        draw_set_font(fItemOverlay_Item);
+        draw_set_valign(fa_middle);
         
-        var txx = headerWidths[3] - 2;
-        
-        draw_set_halign(fa_right);
-        
-        if (i == itemIndex)
+        // Highlight selected item
+        if (inventorySize &gt; 0)
         {
-            // ITEM SELECTED
-            
-            if (ItemIsType(itemMeta, ItemType.Equipable))
-            {
-                var displayText = concat(GetKeyNameU(global.k_action), '  |  Equip &gt;');
-                draw_text(txx, itemMenuY + 9, displayText);
-                
-                txx -= string_width(displayText) + 16;
-            }
-            else if (ItemIsType(itemMeta, ItemType.Consumable))
-            {
-                var displayText = concat(GetKeyNameU(global.k_action), '  |  Consume &gt;');
-                draw_text(txx, itemMenuY + 9, displayText);
-                
-                txx -= string_width(displayText) + 16;
-            }
+            var selectedItemIndexY = itemMenuY - 1 + (itemIndex - windowOffset) * 20;
+            draw_set_color(selectColor);
+            draw_set_alpha(intensity / targetIntensity * 0.5);
+            draw_rectangle(left2, selectedItemIndexY, headerWidths[3], selectedItemIndexY + 17, false);
+            draw_set_alpha(intensity * 2);
+            draw_rectangle(left2, selectedItemIndexY, left2 + 2, selectedItemIndexY + 17, false);
         }
         
-        if (ItemIsType(itemMeta, ItemType.Stackable))
+        draw_set_color(c_white);
+        
+        // Draw items in inventory
+        var i = windowOffset;
+        for(; i &lt; inventorySize &amp;&amp; itemMenuY &lt; itemMenuHeight; ++i)
         {
-            var maxStock = item[? 'max-stock'];
-            var stockMsg = iff(
-                maxStock &gt; 0,
-                concat(item[? 'stock'], ' / ', maxStock, ' Stock'),
-                concat(item[? 'stock'], ' Stock')
+            var item = inventory[| i];
+            var itemMeta = global.dbItems[| item[? 'db-item-index']];
+            
+            draw_sprite(sItemIcons16, itemMeta[? 'image-index'], itemMenuX + 8, itemMenuY + 8);
+            draw_text(itemMenuX + 16 + 5, itemMenuY + 9, itemMeta[? 'name']);
+            
+            var txx = headerWidths[3] - 2;
+            
+            draw_set_halign(fa_right);
+            
+            if (i == itemIndex)
+            {
+                // ITEM SELECTED
+                
+                if (ItemIsType(itemMeta, ItemType.Equipable))
+                {
+                    var displayText = concat(GetKeyNameU(global.k_action), '  |  Equip &gt;');
+                    draw_text(txx, itemMenuY + 9, displayText);
+                    
+                    txx -= string_width(displayText) + 16;
+                }
+                else if (ItemIsType(itemMeta, ItemType.Consumable))
+                {
+                    var displayText = concat(GetKeyNameU(global.k_action), '  |  Consume &gt;');
+                    draw_text(txx, itemMenuY + 9, displayText);
+                    
+                    txx -= string_width(displayText) + 16;
+                }
+            }
+            
+            if (ItemIsType(itemMeta, ItemType.Stackable))
+            {
+                var maxStock = item[? 'max-stock'];
+                var stockMsg = iff(
+                    maxStock &gt; 0,
+                    concat(item[? 'stock'], ' / ', maxStock, ' Stock'),
+                    concat(item[? 'stock'], ' Stock')
+                );
+                
+                draw_text(txx, itemMenuY + 9, stockMsg);
+            }
+            
+            draw_set_halign(fa_left);
+            
+            itemMenuY += 20;
+        }
+        
+        if (i &lt; inventorySize)
+        {
+            var displayText = concat(inventorySize - i, ' More Items');
+            var itemMenuCenterX = (headerWidths[3] - itemMenuX) / 2 + itemMenuX;
+            var messageWidth = string_width(displayText);
+            
+            draw_set_halign(fa_center);
+            draw_text(itemMenuCenterX, itemMenuY + 9, displayText);
+            draw_set_halign(fa_left);
+            
+            draw_line_width(itemMenuX, itemMenuY + 8, itemMenuCenterX - messageWidth / 2 - 8, itemMenuY + 8, 2);
+            draw_line_width(itemMenuCenterX + messageWidth / 2 + 8, itemMenuY + 8, headerWidths[3], itemMenuY + 8, 2);
+        }
+        
+        draw_set_valign(fa_top);
+        
+        // Draw item preview
+        if (inventorySize != 0 &amp;&amp; itemIndex &lt; inventorySize)
+        {
+            var left3 = headerWidths[3] + OFFSET;
+            var ipCenterX = left3 + (right - left3) / 2 - 12;
+            var ipCenterY = top + 24 + OFFSET + 64;
+            
+            var item = inventory[| itemIndex];
+            var itemMeta = global.dbItems[| item[? 'db-item-index']];
+            
+            draw_sprite(sItemIcons24, itemMeta[? 'image-index'], ipCenterX, ipCenterY);
+            
+            draw_set_halign(fa_center);
+            draw_text_outline_width(ipCenterX, ipCenterY + OFFSET + 64, itemMeta[? 'name'] + '##' + itemMeta[? 'description'], 1, outlineColor, 8, (VIEW_WIDTH - OFFSET - left3));
+            draw_set_halign(fa_left);
+        }
+        else
+        {
+            var itemMenuCenterX = (headerWidths[3] - itemMenuX) / 2 + itemMenuX;
+            var itemMenuCenterY = (itemMenuHeight - itemMenuY) / 2 + itemMenuY;
+            
+            draw_set_halign(fa_center);
+            draw_set_valign(fa_middle);
+            draw_text_outline(itemMenuCenterX, itemMenuCenterY, "*Cricket Noises*", 2, outlineColor, 4);
+            draw_set_valign(fa_top);
+            draw_set_halign(fa_left);
+        }
+        break;
+    }
+    
+    case HudMenuTab.Relics:
+        break;
+        
+    case HudMenuTab.Map:
+    {
+        var metadata = GetCurrentRoom();
+        
+        var ct = (top + sIOIcons_Height + 4 + 6);
+        var centerX = (right - left2) / 2 + left2;
+        var centerY = ((bottom - itemRubyHeight + 3 - OFFSET - 20) - ct) / 2 + ct + 32;
+        var mapLeft = floor(centerX - 295 / 2);
+        var mapTop = floor(centerY - 293 / 2);
+        
+        if (HasFlag(metadata[? 'flags'], RoomFlags.Dungeon))
+        {
+            /*
+                7 8 9   ul u ur
+                4 5 6   l  + r
+                1 2 3   bl b br
+                  ^     lur
+                &lt;   &gt;   lud, rud
+                  v     blr
+                -   |   lr, ud
+                  0     none
+             */
+            var map, doors;
+            map[0]   = '   abc d ';
+            map[1]   = ' effg  h ';
+            map[2]   = ' ii l  x ';
+            map[3]   = '  jkl qr ';
+            map[4]   = '    oop  ';
+            map[5]   = '     o   ';
+            doors[0] = '   3v4 0 ';
+            doors[1] = ' 3--8  2 ';
+            doors[2] = ' 91 2  | ';
+            doors[3] = '  9-&lt; 37 ';
+            doors[4] = '    9v7  ';
+            doors[5] = '     8   ';
+            
+            var height = array_length_1d(map);
+            for(var yy = 0; yy &lt; height; ++yy)
+            {
+                var mLine = map[yy];
+                var dLine = doors[yy];
+                var width = string_length(mLine);
+                for(var xx = 0; xx &lt; width; ++xx)
+                {
+                    var mc = string_char_at(mLine, xx + 1);
+                    if (mc == ' ')
+                        continue;
+                    
+                    var dc = string_char_at(dLine, xx + 1);
+                    
+                    var xxx = mapLeft + xx * 12;
+                    var yyy = mapTop + yy * 12;
+                    
+                    draw_set_color(c_white);
+                    draw_rectangle(xxx, yyy, xxx + 11, yyy + 11, false);
+                    
+                    var l, u, d, r;
+                    l = dc == '7' || dc == '4' || dc == '1' || dc == '^' ||
+                        dc == '&lt;' || dc == 'v' || dc == '-' || dc == '+';
+                    u = dc == '7' || dc == '8' || dc == '9' || dc == '^' ||
+                        dc == '&lt;' || dc == '&gt;' || dc == '|' || dc == '+';
+                    d = dc == '1' || dc == '2' || dc == '3' || dc == '&lt;' ||
+                        dc == '&gt;' || dc == 'v' || dc == '|' || dc == '+';
+                    r = dc == '9' || dc == '6' || dc == '3' || dc == '^' ||
+                        dc == '&gt;' || dc == 'v' || dc == '-' || dc == '+';
+                    
+                    if (yy == 0 || string_char_at(map[yy - 1], xx + 1) != mc)
+                        draw_sprite(sHudMapCell, 0 + u, xxx, yyy);
+                    
+                    if (xx == width - 1 || string_char_at(mLine, xx + 2) != mc)
+                        draw_sprite(sHudMapCell, 2 + r, xxx, yyy);
+                        
+                    if (yy == height - 1 || string_char_at(map[yy + 1], xx + 1) != mc)
+                        draw_sprite(sHudMapCell, 4 + d, xxx, yyy);
+                        
+                    if (xx == 0 || string_char_at(mLine, xx) != mc)
+                        draw_sprite(sHudMapCell, 6 + l, xxx, yyy);
+                }
+            }
+        }
+        else
+        {
+            var mapRight = mapLeft + 295;
+            var mapBottom = mapTop + 293;
+            
+            draw_sprite(sHudWorldMap, 0, centerX, centerY);
+            
+            var count = ds_map_size(global.regions);
+            var itr = ds_map_find_first(global.regions);
+            for(var i = 0; i &lt; count; ++i)
+            {
+                if (ds_list_find_index(global.visitedAreas, itr) == -1)
+                {
+                    draw_sprite(
+                        sHudWorldMap,
+                        global.regions[? itr],
+                        centerX,
+                        centerY
+                    );
+                }
+                
+                itr = ds_map_find_next(global.regions, itr);
+            }
+            
+            /*
+            draw_set_color(c_black);
+            draw_set_font(font7); // Arial 4pt no AA
+            for(var xx = mapLeft; xx &lt; mapRight; xx += 8)
+            {
+                draw_text(xx + 4, mapTop - 12, string((xx - mapLeft) / 8));
+                draw_line(xx, mapTop, xx, mapBottom);
+            }
+            
+            for(var yy = mapTop; yy &lt; mapBottom; yy += 8)
+            {
+                draw_text(mapLeft - 12, yy + 4, string((yy - mapTop) / 8));
+                draw_line(mapLeft, yy, mapRight, yy);
+            }
+            */
+            
+            draw_sprite(
+                sHudMapMarker, 0,
+                mapLeft + 4 + metadata[? 'tile-x'] * 8,
+                mapTop + 4 + metadata[? 'tile-y'] * 8
             );
             
-            draw_text(txx, itemMenuY + 9, stockMsg);
+            draw_set_font(fItemOverlay_Item);
+            draw_set_halign(fa_center);
+            draw_set_color(c_white);
+            draw_text_outline(centerX, mapBottom - 12, metadata[? 'name'], 2, outlineColor, 4);
+            draw_set_halign(fa_left);
         }
-        
-        draw_set_halign(fa_left);
-        
-        itemMenuY += 20;
+        break;
     }
-    
-    if (i &lt; inventorySize)
-    {
-        var displayText = concat(inventorySize - i, ' More Items');
-        var itemMenuCenterX = (headerWidths[3] - itemMenuX) / 2 + itemMenuX;
-        var messageWidth = string_width(displayText);
-        
-        draw_set_halign(fa_center);
-        draw_text(itemMenuCenterX, itemMenuY + 9, displayText);
-        draw_set_halign(fa_left);
-        
-        draw_line_width(itemMenuX, itemMenuY + 8, itemMenuCenterX - messageWidth / 2 - 8, itemMenuY + 8, 2);
-        draw_line_width(itemMenuCenterX + messageWidth / 2 + 8, itemMenuY + 8, headerWidths[3], itemMenuY + 8, 2);
-    }
-    
-    draw_set_valign(fa_top);
-    
-    // Draw item preview
-    if (inventorySize != 0 &amp;&amp; itemIndex &lt; inventorySize)
-    {
-        var left3 = headerWidths[3] + OFFSET;
-        var ipCenterX = left3 + (right - left3) / 2 - 12;
-        var ipCenterY = top + 24 + OFFSET + 64;
-        
-        var item = inventory[| itemIndex];
-        var itemMeta = global.dbItems[| item[? 'db-item-index']];
-        
-        draw_sprite(sItemIcons24, itemMeta[? 'image-index'], ipCenterX, ipCenterY);
-        
-        draw_set_halign(fa_center);
-        draw_text_outline_width(ipCenterX, ipCenterY + OFFSET + 64, itemMeta[? 'name'] + '##' + itemMeta[? 'description'], 1, outlineColor, 8, (VIEW_WIDTH - OFFSET - left3));
-        draw_set_halign(fa_left);
-    }
-    else
-    {
-        var itemMenuCenterX = (headerWidths[3] - itemMenuX) / 2 + itemMenuX;
-        var itemMenuCenterY = (itemMenuHeight - itemMenuY) / 2 + itemMenuY;
-        
-        draw_set_halign(fa_center);
-        draw_set_valign(fa_middle);
-        draw_text_outline(itemMenuCenterX, itemMenuCenterY, "*Cricket Noises*", 2, outlineColor, 4);
-        draw_set_valign(fa_top);
-        draw_set_halign(fa_left);
-    }
-}
-else
-{
-    // Draw Relics
 }
 
 draw_set_alpha(1);
