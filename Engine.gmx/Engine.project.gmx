@@ -3,7 +3,46 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <datafiles number="1" name="datafiles"/>
+  <datafiles number="3" name="datafiles">
+    <datafiles number="3" name="Maps">
+      <datafiles number="3" name="DEBUG">
+        <datafile>
+          <name>Doors.txt</name>
+          <exists>-1</exists>
+          <size>137</size>
+          <exportAction>2</exportAction>
+          <exportDir></exportDir>
+          <overwrite>0</overwrite>
+          <freeData>-1</freeData>
+          <removeEnd>0</removeEnd>
+          <store>0</store>
+          <ConfigOptions>
+            <Config name="Default">
+              <CopyToMask>9223372036854775807</CopyToMask>
+            </Config>
+          </ConfigOptions>
+          <filename>Doors.txt</filename>
+        </datafile>
+        <datafile>
+          <name>Rooms.txt</name>
+          <exists>-1</exists>
+          <size>137</size>
+          <exportAction>2</exportAction>
+          <exportDir></exportDir>
+          <overwrite>0</overwrite>
+          <freeData>-1</freeData>
+          <removeEnd>0</removeEnd>
+          <store>0</store>
+          <ConfigOptions>
+            <Config name="Default">
+              <CopyToMask>9223372036854775807</CopyToMask>
+            </Config>
+          </ConfigOptions>
+          <filename>Rooms.txt</filename>
+        </datafile>
+      </datafiles>
+    </datafiles>
+  </datafiles>
   <NewExtensions>
     <extension index="0">extensions\Draw Text Outlined</extension>
   </NewExtensions>
@@ -214,9 +253,11 @@
             <script>scripts\GuiGetShowKeyCount.gml</script>
           </scripts>
           <script>scripts\RoomAdd.gml</script>
+          <script>scripts\RoomAddZ.gml</script>
           <script>scripts\GetCurrentRoomName.gml</script>
           <script>scripts\GetCurrentRoom.gml</script>
           <script>scripts\GetRoomName.gml</script>
+          <script>scripts\LoadMapData.gml</script>
         </scripts>
         <script>scripts\SpawnItem.gml</script>
       </scripts>
@@ -256,6 +297,7 @@
           <script>scripts\ToastCheckpoint.gml</script>
           <script>scripts\NotifyInteraction.gml</script>
         </scripts>
+        <script>scripts\DrawDungeonMap.gml</script>
       </scripts>
       <script>scripts\CalculateSmoothAngle.gml</script>
     </scripts>

@@ -9,6 +9,7 @@
         entry[? 'flags'] = argument3;
         entry[? 'tile-x'] = argument4;
         entry[? 'tile-y'] = argument5;
+        entry[? 'tile-z'] = 0;
     ds_map_add(global.rooms, argument0, entry);
     
     // Key Map Entry

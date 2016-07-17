@@ -88,6 +88,9 @@ menuTabIndex = HudMenuTab.Inventory;
 itemIndex = 0;
 windowOffset = 0;
 
+// DUNGEON MAP VARIABLES
+layer = 0;
+
 intensity = 0;
 targetIntensity = 0;
 enabled = true;
@@ -249,6 +252,12 @@ if (CheckKey(global.k_toggle_item_overlay, E_PRESS))
 {
     itemOverlayEnabled = !itemOverlayEnabled;
     targetIntensity = iff(itemOverlayEnabled, 0.7, 0);
+    
+    if (itemOverlayEnabled)
+    {
+        var metadata = GetCurrentRoom();
+        layer = metadata[? 'tile-z'];
+    }
 }
 
 var inventory = noone;
@@ -261,6 +270,7 @@ if (enabled)
 {
     if (CheckKey(global.k_down, E_PRESS) &amp;&amp; inventory != noone)
     {
+        // Inventory Down
         var OFFSET = 12;
         var top = OFFSET;
         var bottom = display_get_gui_height() - OFFSET;
@@ -278,6 +288,7 @@ if (enabled)
     }
     else if (CheckKey(global.k_up, E_PRESS) &amp;&amp; inventory != noone)
     {
+        // Inventory Up
         var OFFSET = 12;
         var top = OFFSET;
         var bottom = display_get_gui_height() - OFFSET;
@@ -297,6 +308,8 @@ if (enabled)
     {
         itemIndex = 0;
         windowOffset = 0;
+        var metadata = GetCurrentRoom();
+        layer = metadata[? 'tile-z'];
         
         ++menuTabIndex;
         if (menuTabIndex &gt;= HudMenuTab.Count)
@@ -306,7 +319,9 @@ if (enabled)
     {
         itemIndex = 0;
         windowOffset = 0;
-
+        var metadata = GetCurrentRoom();
+        layer = metadata[? 'tile-z'];
+    
         --menuTabIndex;
         if (menuTabIndex &lt; 0)
             menuTabIndex = HudMenuTab.Count - 1;
@@ -334,6 +349,30 @@ if (enabled)
             global.primaryItemIndex = itemIndex;
             
             show_debug_message(concat('Equipped item-index ', global.primaryItemIndex, '; stack = ', ds_stack_size(global.equipStack)));
+        }
+    }
+    
+    else if (CheckKey(global.k_up, E_PRESS) &amp;&amp; menuTabIndex == HudMenuTab.Map)
+    {
+        // Map Up
+        var metadata = GetCurrentRoom();
+        if (HasFlag(metadata[? 'flags'], RoomFlags.Dungeon))
+        {
+            --layer;
+            if (layer &lt; 0)
+                layer = 0;
+        }
+    }
+    else if (CheckKey(global.k_down, E_PRESS) &amp;&amp; menuTabIndex == HudMenuTab.Map)
+    {
+        // Map Down
+        var metadata = GetCurrentRoom();
+        if (HasFlag(metadata[? 'flags'], RoomFlags.Dungeon))
+        {
+            var layers = global.dungeonMaps[? metadata[? 'group-id']];
+            ++layer;
+            if (layer &gt;= ds_list_size(layers))
+                layer = ds_list_size(layers) - 1;
         }
     }
 }
@@ -368,6 +407,7 @@ if (inventory != noone)
           <argument>
             <kind>1</kind>
             <string>//view_surface_id[0] = surf[2];
+
 </string>
           </argument>
         </arguments>
@@ -673,73 +713,7 @@ switch(menuTabIndex)
         
         if (HasFlag(metadata[? 'flags'], RoomFlags.Dungeon))
         {
-            /*
-                7 8 9   ul u ur
-                4 5 6   l  + r
-                1 2 3   bl b br
-                  ^     lur
-                &lt;   &gt;   lud, rud
-                  v     blr
-                -   |   lr, ud
-                  0     none
-             */
-            var map, doors;
-            map[0]   = '   abc d ';
-            map[1]   = ' effg  h ';
-            map[2]   = ' ii l  x ';
-            map[3]   = '  jkl qr ';
-            map[4]   = '    oop  ';
-            map[5]   = '     o   ';
-            doors[0] = '   3v4 0 ';
-            doors[1] = ' 3--8  2 ';
-            doors[2] = ' 91 2  | ';
-            doors[3] = '  9-&lt; 37 ';
-            doors[4] = '    9v7  ';
-            doors[5] = '     8   ';
-            
-            var height = array_length_1d(map);
-            for(var yy = 0; yy &lt; height; ++yy)
-            {
-                var mLine = map[yy];
-                var dLine = doors[yy];
-                var width = string_length(mLine);
-                for(var xx = 0; xx &lt; width; ++xx)
-                {
-                    var mc = string_char_at(mLine, xx + 1);
-                    if (mc == ' ')
-                        continue;
-                    
-                    var dc = string_char_at(dLine, xx + 1);
-                    
-                    var xxx = mapLeft + xx * 12;
-                    var yyy = mapTop + yy * 12;
-                    
-                    draw_set_color(c_white);
-                    draw_rectangle(xxx, yyy, xxx + 11, yyy + 11, false);
-                    
-                    var l, u, d, r;
-                    l = dc == '7' || dc == '4' || dc == '1' || dc == '^' ||
-                        dc == '&lt;' || dc == 'v' || dc == '-' || dc == '+';
-                    u = dc == '7' || dc == '8' || dc == '9' || dc == '^' ||
-                        dc == '&lt;' || dc == '&gt;' || dc == '|' || dc == '+';
-                    d = dc == '1' || dc == '2' || dc == '3' || dc == '&lt;' ||
-                        dc == '&gt;' || dc == 'v' || dc == '|' || dc == '+';
-                    r = dc == '9' || dc == '6' || dc == '3' || dc == '^' ||
-                        dc == '&gt;' || dc == 'v' || dc == '-' || dc == '+';
-                    
-                    if (yy == 0 || string_char_at(map[yy - 1], xx + 1) != mc)
-                        draw_sprite(sHudMapCell, 0 + u, xxx, yyy);
-                    
-                    if (xx == width - 1 || string_char_at(mLine, xx + 2) != mc)
-                        draw_sprite(sHudMapCell, 2 + r, xxx, yyy);
-                        
-                    if (yy == height - 1 || string_char_at(map[yy + 1], xx + 1) != mc)
-                        draw_sprite(sHudMapCell, 4 + d, xxx, yyy);
-                        
-                    if (xx == 0 || string_char_at(mLine, xx) != mc)
-                        draw_sprite(sHudMapCell, 6 + l, xxx, yyy);
-                }
-            }
+            DrawDungeonMap(mapLeft, mapTop, layer);
         }
         else
         {

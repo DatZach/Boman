@@ -21,18 +21,22 @@
     global.regions[? 'DEBUG_LAKE'] = 2;
     global.regions[? 'DEBUG'] = 3;
     
+    // Dungeon Maps
+    global.dungeonMaps = ds_map_create();
+    LoadMapData('DEBUG', 'Maps\DEBUG');    
+    
     // System Rooms
     RoomAdd(rInitialize, 'SYSTEM', 'Initialization', RoomFlags.None, 0, 0);
     
     // Debug Rooms
-    RoomAdd(rDebug01_Platforming, 'DEBUG_LAKE', 'DEBUG - Platforming', RoomFlags.None, 0, 0);
-    RoomAdd(rDebug02_Mechanics, 'DEBUG', 'DEBUG - Mechanics', RoomFlags.None, 0, 0);
-    RoomAdd(rDebug03_Particles, 'DEBUG', 'DEBUG - Particles', RoomFlags.None, 0, 0);
-    RoomAdd(rDebug04_Dungeon01, 'DEBUG', 'Mysterious Cave', RoomFlags.Dungeon, 8, 5);
-    RoomAdd(rDebug04_Dungeon02, 'DEBUG', 'Mysterious Cave', RoomFlags.Dungeon, 8, 5);
-    RoomAdd(rDebug04_Dungeon03, 'DEBUG', 'Mysterious Cave', RoomFlags.Dungeon, 8, 5);
-    RoomAdd(rDebug04_Dungeon04, 'DEBUG', 'Mysterious Cave', RoomFlags.Dungeon, 8, 5);
-    RoomAdd(rDebug04_Town, 'DEBUG_TOWN', 'Reading Town', RoomFlags.None, 3, 14);
+    RoomAddZ(rDebug01_Platforming, 'DEBUG_LAKE', 'DEBUG - Platforming', RoomFlags.None, 0, 0, 0);
+    RoomAddZ(rDebug02_Mechanics, 'DEBUG', 'DEBUG - Mechanics', RoomFlags.None, 0, 0, 0);
+    RoomAddZ(rDebug03_Particles, 'DEBUG', 'DEBUG - Particles', RoomFlags.None, 0, 0, 0);
+    RoomAddZ(rDebug04_Dungeon01, 'DEBUG', 'Mysterious Cave', RoomFlags.Dungeon, 5, 4, 0);
+    RoomAddZ(rDebug04_Dungeon02, 'DEBUG', 'Mysterious Cave', RoomFlags.Dungeon, 6, 4, 0);
+    RoomAddZ(rDebug04_Dungeon03, 'DEBUG', 'Mysterious Cave', RoomFlags.Dungeon, 6, 3, 0);
+    RoomAddZ(rDebug04_Dungeon04, 'DEBUG', 'Mysterious Cave', RoomFlags.Dungeon, 5, 4, 1);
+    RoomAddZ(rDebug04_Town, 'DEBUG_TOWN', 'Reading Town', RoomFlags.None, 3, 14, 0);
     
     // Verify that all rooms exist in database
     var r = room_first;

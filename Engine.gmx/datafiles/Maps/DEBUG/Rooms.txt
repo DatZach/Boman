@@ -1,0 +1,14 @@
+6
+   abc d 
+ effg  h 
+ ii l  x 
+  jkl qr 
+    oop  
+     o   
+
+    bc d 
+ effg  h 
+ ii l  x 
+  jkl qr 
+    oop  
+     o   
