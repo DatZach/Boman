@@ -4,6 +4,7 @@
     with(argument0)
     {
         var entry = ds_map_create();
+        entry[? 'type'] = 0;
         entry[? 'side'] = argument1;
         entry[? 'portrait'] = argument2;
         entry[? 'name'] = argument3;

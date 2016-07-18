@@ -34,7 +34,7 @@
     RoomAddZ(rDebug03_Particles, 'DEBUG', 'DEBUG - Particles', RoomFlags.None, 0, 0, 0);
     RoomAddZ(rDebug04_Dungeon01, 'DEBUG', 'Mysterious Cave', RoomFlags.Dungeon, 5, 4, 0);
     RoomAddZ(rDebug04_Dungeon02, 'DEBUG', 'Mysterious Cave', RoomFlags.Dungeon, 6, 4, 0);
-    RoomAddZ(rDebug04_Dungeon03, 'DEBUG', 'Mysterious Cave', RoomFlags.Dungeon, 6, 3, 0);
+    RoomAdd(rDebug04_Dungeon03, 'DEBUG_LAKE', 'Outside the Mysterious Cave', RoomFlags.None, 5, 9);
     RoomAddZ(rDebug04_Dungeon04, 'DEBUG', 'Mysterious Cave', RoomFlags.Dungeon, 5, 4, 1);
     RoomAddZ(rDebug04_Town, 'DEBUG_TOWN', 'Reading Town', RoomFlags.None, 3, 14, 0);
     
