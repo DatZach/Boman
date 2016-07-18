@@ -23,6 +23,7 @@
     
     // Dungeon Maps
     global.dungeonMaps = ds_map_create();
+    global.visitedAreasDungeons = ds_map_create();
     LoadMapData('DEBUG', 'Maps\DEBUG');    
     
     // System Rooms

@@ -18,6 +18,8 @@
     var map = currentLayer[| 0];
     var doors = currentLayer[| 1];
     
+    var visited = global.visitedAreasDungeons[? groupId];
+    
     draw_set_font(fHudOverlay);
     for(var i = 0; i < ds_list_size(layers); ++i)
     {
@@ -57,7 +59,7 @@
         for(var xx = 0; xx < width; ++xx)
         {
             var mc = string_char_at(mLine, xx + 1);
-            if (mc == ' ')
+            if (mc == ' ' || ds_list_find_index(visited, concat(layer, mc)) == -1)
                 continue;
             
             var dc = string_char_at(dLine, xx + 1);

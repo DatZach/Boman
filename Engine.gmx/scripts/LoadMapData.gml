@@ -80,6 +80,7 @@
     }
     
     global.dungeonMaps[? region] = entry;
+    global.visitedAreasDungeons[? region] = ds_list_create();
         
     ds_list_destroy(tmpMaps);
     ds_list_destroy(tmpDoors);

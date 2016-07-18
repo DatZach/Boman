@@ -150,7 +150,24 @@ view_enabled = true;
 var metadata = GetCurrentRoom();
 
 // Mark this area as visited
-global.visitedTiles[metadata[? 'tile-x'], metadata[? 'tile-y']] = true;
+var tileX = metadata[? 'tile-x'];
+var tileY = metadata[? 'tile-y'];
+if (HasFlag(metadata[? 'flags'], RoomFlags.Dungeon))
+{
+    var vTiles = global.visitedAreasDungeons[? metadata[? 'group-id']];
+    
+    var tileZ = metadata[? 'tile-z'];
+    var layers = global.dungeonMaps[? metadata[? 'group-id']];
+    var layer = layers[| tileZ];
+    var map = layer[| 0];
+    var line = map[tileY];
+    var cellId = concat(tileZ, string_char_at(line, tileX + 1));
+    
+    if (ds_list_find_index(vTiles, cellId) == -1)
+        ds_list_add(vTiles, cellId);
+}
+else
+    global.visitedTiles[tileX, tileY] = true;
 
 // Toast an area if we haven't visited it before
 if (ds_list_find_index(global.visitedAreas, metadata[? 'group-id']) &lt; 0)
