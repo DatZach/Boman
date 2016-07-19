@@ -1,9 +1,9 @@
 6
-   abc d 
- effg  h 
+   0bc d 
+ effg  * 
  ii l  x 
   jkl qr 
-    oop  
+    o1p  
      o   
 
          

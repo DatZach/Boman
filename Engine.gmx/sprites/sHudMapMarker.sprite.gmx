@@ -9,8 +9,8 @@
   <bboxmode>0</bboxmode>
   <bbox_left>0</bbox_left>
   <bbox_right>15</bbox_right>
-  <bbox_top>2</bbox_top>
-  <bbox_bottom>13</bbox_bottom>
+  <bbox_top>0</bbox_top>
+  <bbox_bottom>15</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
   <TextureGroups>
@@ -21,5 +21,7 @@
   <height>16</height>
   <frames>
     <frame index="0">images\sHudMapMarker_0.png</frame>
+    <frame index="1">images\sHudMapMarker_1.png</frame>
+    <frame index="2">images\sHudMapMarker_2.png</frame>
   </frames>
 </sprite>

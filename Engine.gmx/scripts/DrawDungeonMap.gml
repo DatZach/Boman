@@ -1,4 +1,4 @@
-/// DrawDungeonMap(left, top, layer);
+/// DrawDungeonMap(left, top, layer, compass);
 /// Draws a dungeon map for the current area
 
 {
@@ -6,6 +6,7 @@
     var mapLeft = argument0 + 80;
     var mapTop = argument1;
     var layer = argument2;
+    var compass = argument3;
     
     var metadata = GetCurrentRoom();
     var groupId = metadata[? 'group-id'];
@@ -59,7 +60,10 @@
         for(var xx = 0; xx < width; ++xx)
         {
             var mc = string_char_at(mLine, xx + 1);
-            if (mc == ' ' || ds_list_find_index(visited, concat(layer, mc)) == -1)
+            var isNumeric = ord(mc) >= ord('0') && ord(mc) <= ord('9');
+            if ((mc == ' ' || ds_list_find_index(visited, concat(layer, mc)) == -1) &&
+                (mc != '*' && compass) &&
+                (!isNumeric && compass))
                 continue;
             
             var dc = string_char_at(dLine, xx + 1);
@@ -95,6 +99,12 @@
             if (dj) draw_sprite(sHudMapCell, 4 + d, xxx, yyy);
             if (lj) draw_sprite(sHudMapCell, 6 + l, xxx, yyy);
             
+            if (mc == '*')
+                draw_sprite(sHudMapMarker, 1, xxx + 6, yyy + 6);
+            
+            if (isNumeric)
+                draw_sprite(sHudMapMarker, 2, xxx + 6, yyy + 6);
+                
             if (selected)
                 draw_sprite(sHudMapMarker, 0, xxx + 6, yyy + 6);
         }

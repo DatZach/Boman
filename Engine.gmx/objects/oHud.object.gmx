@@ -713,7 +713,8 @@ switch(menuTabIndex)
         
         if (HasFlag(metadata[? 'flags'], RoomFlags.Dungeon))
         {
-            DrawDungeonMap(mapLeft, mapTop, layer);
+            // TODO Determine if we have a compass for this area
+            DrawDungeonMap(mapLeft, mapTop, layer, true);
         }
         else
         {
