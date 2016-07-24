@@ -221,7 +221,8 @@ enabled = intensity &gt; 0.01;
 
 global.gamePaused = enabled
                  || (!RELEASE_MODE &amp;&amp; ConsoleActive(oController.debugConsole))
-                 || instance_exists(oDialogue);
+                 || instance_exists(oDialogue)
+                 || instance_exists(oTeleportOverlay);
 
 </string>
           </argument>
@@ -713,8 +714,13 @@ switch(menuTabIndex)
         
         if (HasFlag(metadata[? 'flags'], RoomFlags.Dungeon))
         {
-            // TODO Determine if we have a compass for this area
-            DrawDungeonMap(mapLeft, mapTop, layer, true);
+            DrawDungeonMap(
+                mapLeft,
+                mapTop,
+                layer,
+                ds_list_find_index(global.dungeonReveals, metadata[? 'group-id']) != -1,
+                ds_list_find_index(global.dungeonCompasses, metadata[? 'group-id']) != -1
+            );
         }
         else
         {

@@ -36,6 +36,8 @@
     // Globals - Misc
     global.previousAreaGroupId = '';
     
+    global.destShrineId = noone;
+    
     global.destLayerDoorName = '';
     global.destLayerDoorId = noone;
     

@@ -8,6 +8,7 @@
     switch(index)
     {
         case 0: // Teleport
+            instance_create(0, 0, oTeleportOverlay);
             break;
         
         case 1: // Blood Sacrifice

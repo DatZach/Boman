@@ -14,6 +14,8 @@
     global.visitedAreas = ds_list_create();
     global.completedAreas = ds_list_create();
     global.shrines = ds_list_create();
+    global.dungeonReveals = ds_list_create();
+    global.dungeonCompasses = ds_list_create();
     
     // Regions
     global.regions = ds_map_create();

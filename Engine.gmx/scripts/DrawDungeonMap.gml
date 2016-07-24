@@ -1,12 +1,15 @@
-/// DrawDungeonMap(left, top, layer, compass);
+/// DrawDungeonMap(left, top, layer, revealed, compass);
 /// Draws a dungeon map for the current area
 
 {
     var layersLeft = argument0;
+    var layersTop = argument1 + 48;
+    
     var mapLeft = argument0 + 80;
     var mapTop = argument1;
     var layer = argument2;
-    var compass = argument3;
+    var revealed = argument3;
+    var compass = argument4;
     
     var metadata = GetCurrentRoom();
     var groupId = metadata[? 'group-id'];
@@ -21,23 +24,42 @@
     
     var visited = global.visitedAreasDungeons[? groupId];
     
+    // Layers & Icons
+    draw_sprite_ext(
+        sHudMapMarker, 3,
+        layersLeft + 40 - 20,
+        mapTop + 16,
+        1, 1, 0,
+        iff(revealed, c_white, c_black),
+        1
+    );
+    
+    draw_sprite_ext(
+        sHudMapMarker, 4,
+        layersLeft + 40 + 4,
+        mapTop + 16,
+        1, 1, 0,
+        iff(compass, c_white, c_black),
+        1
+    );
+    
     draw_set_font(fHudOverlay);
     for(var i = 0; i < ds_list_size(layers); ++i)
     {
-        var yy = mapTop + i * 16;
+        var yy = layersTop + i * 16;
         
         draw_set_color(iff(i == layer, c_aqua, c_white));
         draw_rectangle(
             layersLeft, yy,
-            layersLeft + 32, yy + 12,
+            layersLeft + 60, yy + 12,
             false
         );
         
         draw_set_color(c_black);
-        draw_text(layersLeft + 2, yy + 2, string(i + 1));
+        draw_text(layersLeft + 4, yy + 2, string(i + 1));
         
         if (i == tileZ)
-            draw_sprite(sHudMapMarker, 0, layersLeft + 32 - 8, yy + 7);
+            draw_sprite(sHudMapMarker, 0, layersLeft + 34, yy + 7);
     }
     
     /*
@@ -60,11 +82,16 @@
         for(var xx = 0; xx < width; ++xx)
         {
             var mc = string_char_at(mLine, xx + 1);
-            var isNumeric = ord(mc) >= ord('0') && ord(mc) <= ord('9');
-            if ((mc == ' ' || ds_list_find_index(visited, concat(layer, mc)) == -1) &&
-                (mc != '*' && compass) &&
-                (!isNumeric && compass))
+            var isNumeric = IsNumeric(mc);
+            
+            if (mc == ' ')
                 continue;
+            
+            if ((compass && (mc != '*' && !isNumeric)) || !compass)
+            {
+                if (!revealed && ds_list_find_index(visited, concat(layer, mc)) == -1)
+                    continue;
+            }
             
             var dc = string_char_at(dLine, xx + 1);
             
@@ -99,12 +126,15 @@
             if (dj) draw_sprite(sHudMapCell, 4 + d, xxx, yyy);
             if (lj) draw_sprite(sHudMapCell, 6 + l, xxx, yyy);
             
-            if (mc == '*')
-                draw_sprite(sHudMapMarker, 1, xxx + 6, yyy + 6);
-            
-            if (isNumeric)
-                draw_sprite(sHudMapMarker, 2, xxx + 6, yyy + 6);
+            if (compass)
+            {
+                if (mc == '*')
+                    draw_sprite(sHudMapMarker, 1, xxx + 6, yyy + 6);
                 
+                if (isNumeric)
+                    draw_sprite(sHudMapMarker, 2, xxx + 6, yyy + 6);
+            }
+            
             if (selected)
                 draw_sprite(sHudMapMarker, 0, xxx + 6, yyy + 6);
         }

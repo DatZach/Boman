@@ -182,7 +182,7 @@
     <instance objName="oFloorSwitch" x="1088" y="320" name="inst_7E4F8C66" locked="0" code="group = 'room03_01';" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oMobTurtle" x="1024" y="320" name="inst_AEFA8B20" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oChest" x="336" y="304" name="inst_0FB5A842" locked="0" code="InitializeLeveledChest(1);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oChest" x="128" y="304" name="inst_4E2617F1" locked="0" code="InitializeStaticChest(global.ITEM_Lantern);&#xA;InitializeLeveledChest(1);&#xA;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oChest" x="128" y="304" name="inst_4E2617F1" locked="0" code="InitializeStaticChest(global.ITEM_Lantern);&#xA;InitializeLeveledChest(1);" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oLayerDoor" x="1232" y="448" name="inst_6AB53C6A" locked="0" code="dest = rDebug04_Dungeon02;&#xA;name = 'door01';&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oVine" x="1152" y="352" name="inst_3260783B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oVine" x="1184" y="352" name="inst_FAA36378" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -223,6 +223,7 @@
     <instance objName="oBlock" x="576" y="272" name="inst_B0AA58F7" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oDoor" x="624" y="288" name="inst_634D7541" locked="0" code="name = 'other-room-door';&#xA;locked = true;" scaleX="1" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="oShrine" x="400" y="320" name="inst_96B51316" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oChest" x="592" y="112" name="inst_E15451BE" locked="0" code="InitializeStaticChest(global.ITEM_Map);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

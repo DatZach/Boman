@@ -25,6 +25,7 @@
 
     // Special Items
     global.ITEM_Key                         = DbItemAdd(11, 'Key', '', 0, 0, 0, 0, ItemType.None);
+    global.ITEM_Map                         = DbItemAdd(12, 'Dungeon Map', '', 0, 0, 0, 0, ItemType.None);
     
     // Secondary Items
     global.ITEM_RedMedalion                 = DbItemAdd(5, 'Red Medalion', 'This relic was found deep underground.', 0, 99, 0.01, 0, ItemType.None);

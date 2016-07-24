@@ -129,9 +129,12 @@
         <sprite>sprites\sToast</sprite>
         <sprite>sprites\sItemIcons16</sprite>
         <sprite>sprites\sItemIcons24</sprite>
-        <sprite>sprites\sHudWorldMap</sprite>
-        <sprite>sprites\sHudMapMarker</sprite>
-        <sprite>sprites\sHudMapCell</sprite>
+        <sprites name="Map">
+          <sprite>sprites\sHudWorldMap</sprite>
+          <sprite>sprites\sHudMapMarker</sprite>
+          <sprite>sprites\sHudMapCell</sprite>
+          <sprite>sprites\sHudMapOverlay</sprite>
+        </sprites>
       </sprites>
       <sprites name="Portraits">
         <sprite>sprites\sPortraitProtagonist</sprite>
@@ -267,6 +270,7 @@
           <script>scripts\RegisterShrine.gml</script>
           <script>scripts\FlushUncompletedShrines.gml</script>
           <script>scripts\ShrineIsActive.gml</script>
+          <script>scripts\TeleportToShrine.gml</script>
         </scripts>
         <script>scripts\SetCheckpoint.gml</script>
         <script>scripts\RespawnToCheckpoint.gml</script>
@@ -298,6 +302,11 @@
           <script>scripts\NotifyInteraction.gml</script>
         </scripts>
         <script>scripts\DrawDungeonMap.gml</script>
+        <script>scripts\MarkDungeonMapReveal.gml</script>
+        <script>scripts\MarkDungeonMapCompass.gml</script>
+        <script>scripts\FindShrineInMap.gml</script>
+        <script>scripts\GetCurrentDungeonTileId.gml</script>
+        <script>scripts\GetDungeonTileIdAt.gml</script>
       </scripts>
       <script>scripts\CalculateSmoothAngle.gml</script>
     </scripts>
@@ -323,6 +332,7 @@
       <script>scripts\draw_text_outline_width.gml</script>
       <script>scripts\HasFlag.gml</script>
       <script>scripts\make_color_hex.gml</script>
+      <script>scripts\IsNumeric.gml</script>
     </scripts>
     <scripts name="Game">
       <scripts name="Dialogue">
@@ -367,6 +377,7 @@
         <object>objects\oAreaToast</object>
         <object>objects\oDeathOverlay</object>
         <object>objects\oCheckpointToast</object>
+        <object>objects\oTeleportOverlay</object>
       </objects>
       <objects name="Weapons">
         <object>objects\oWeaponBomb</object>

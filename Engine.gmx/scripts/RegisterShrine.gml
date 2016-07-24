@@ -8,6 +8,7 @@
         entry[? 'group-id'] = metadata[? 'group-id'];
         entry[? 'room'] = room;
         entry[? 'id'] = id;
+        entry[? 'tile-id'] = GetCurrentDungeonTileId();
     ds_list_add(global.shrines, entry);
 }
 
