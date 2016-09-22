@@ -56,7 +56,7 @@
         );
         
         draw_set_color(c_black);
-        draw_text(layersLeft + 4, yy + 2, string(i + 1));
+        draw_text(layersLeft + 4, yy + 2, concat('L', i + 1));
         
         if (i == tileZ)
             draw_sprite(sHudMapMarker, 0, layersLeft + 34, yy + 7);
