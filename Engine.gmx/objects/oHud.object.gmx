@@ -222,7 +222,8 @@ enabled = intensity &gt; 0.01;
 global.gamePaused = enabled
                  || (!RELEASE_MODE &amp;&amp; ConsoleActive(oController.debugConsole))
                  || instance_exists(oDialogue)
-                 || instance_exists(oTeleportOverlay);
+                 || instance_exists(oTeleportOverlay)
+                 || instance_exists(oPauseMenu);
 
 </string>
           </argument>
@@ -262,6 +263,12 @@ if (CheckKey(global.k_toggle_item_overlay, E_PRESS))
         var metadata = GetCurrentRoom();
         layer = metadata[? 'tile-z'];
     }
+}
+
+if (CheckKey(global.k_toggle_pause_menu, E_PRESS))
+{
+    instance_create(0, 0, oPauseMenu);
+    exit;
 }
 
 var inventory = noone;

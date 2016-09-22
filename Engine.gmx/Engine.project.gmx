@@ -378,6 +378,7 @@
         <object>objects\oDeathOverlay</object>
         <object>objects\oCheckpointToast</object>
         <object>objects\oTeleportOverlay</object>
+        <object>objects\oPauseMenu</object>
       </objects>
       <objects name="Weapons">
         <object>objects\oWeaponBomb</object>
