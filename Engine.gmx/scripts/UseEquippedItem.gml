@@ -13,8 +13,8 @@
             break;
             
         case global.ITEM_Smokebomb:
-            if (InventoryRemoveIndex(global.inventory, itemIndex))
-                FxSmoke(x, y, 30);
+            InventoryRemoveIndex(global.inventory, itemIndex);
+            FxSmoke(x, y, 30);
             break;
     }
 }

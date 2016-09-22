@@ -251,6 +251,9 @@ if (instance_exists(oDialogue))
 
 if (CheckKey(global.k_toggle_item_overlay, E_PRESS))
 {
+    if (instance_exists(oTeleportOverlay))
+        exit;
+    
     itemOverlayEnabled = !itemOverlayEnabled;
     targetIntensity = iff(itemOverlayEnabled, 0.7, 0);
     
@@ -747,6 +750,7 @@ switch(menuTabIndex)
             }
             
             /*
+            // DRAW DEBUG OVERLAY -- RENDER CO-ORD GRID
             draw_set_color(c_black);
             draw_set_font(font7); // Arial 4pt no AA
             for(var xx = mapLeft; xx &lt; mapRight; xx += 8)

@@ -1,16 +1,16 @@
-/// FindShrineInMap(x, y, dir);
+/// FindShrineInMap(x, y, layer, dir);
 /// Returns an array containing the x/y of the next shrine in a given direction
 
 {
     var xx = argument0;
     var yy = argument1;
-    var dir = argument2;
+    var layer = argument2;
+    var dir = argument3;
     
     var metadata = GetCurrentRoom();
     var groupId = metadata[? 'group-id'];
-    var tileZ = metadata[? 'tile-z'];
     var layers = global.dungeonMaps[? groupId];
-    var currentLayer = layers[| tileZ];
+    var currentLayer = layers[| layer];
     var map = currentLayer[| 0];
     
     var height = array_length_1d(map);
@@ -19,13 +19,12 @@
     switch(dir)
     {
         case vk_right:
-        case vk_down:
         {
             var h = 0;
             var v = 1;
-            while(h < width)
+            while(h <= width)
             {
-                while(v < height)
+                while(v <= height)
                 {
                     var rx = (xx + h) % width;
                     var ry = (yy + v) % height;
@@ -47,7 +46,7 @@
                     
                     var row = map[ry];
                     var mc = string_char_at(row, rx + 1);
-                    //show_debug_message(concat('mc = "', mc, '" ', rx, '/', ry));
+                    show_debug_message(concat('mc = "', mc, '" ', rx, '/', ry));
                     if (IsNumeric(mc))
                     {
                         var r = 0;
@@ -61,7 +60,6 @@
         }
         
         case vk_left:
-        case vk_up:
         {
             for(var h = width - 1; h >= 0; --h)
             {
@@ -70,10 +68,7 @@
                     var rx = (xx + h) % width;
                     var ry = (yy + v - 1) % height;
                     if (ry < 0)
-                    {
-                        --h;
                         ry = height - 1;
-                    }
                     
                     var row = map[ry];
                     var mc = string_char_at(row, rx + 1);

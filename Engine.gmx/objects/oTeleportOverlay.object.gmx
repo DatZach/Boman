@@ -27,9 +27,10 @@
             <kind>1</kind>
             <string>/// Initialize
 
-layer = 0;
+var metadata = GetCurrentRoom();
+layer = metadata[? 'tile-z'];
 
-var r = FindShrineInMap(0, 0, vk_right);
+var r = FindShrineInMap(0, 0, layer, vk_right);
 xx = r[0];
 yy = r[1];
 
@@ -85,15 +86,43 @@ message = '';
             <kind>1</kind>
             <string>/// Handle input
 
-if (CheckKey(global.k_left, E_PRESS) || CheckKey(global.k_up, E_PRESS))
+if (CheckKey(global.k_left, E_PRESS))
 {
-    var r = FindShrineInMap(xx, yy, vk_left);
+    var r = FindShrineInMap(xx, yy, layer, vk_left);
     xx = r[0];
     yy = r[1];
 }
-else if (CheckKey(global.k_right, E_PRESS) || CheckKey(global.k_down, E_PRESS))
+else if (CheckKey(global.k_right, E_PRESS))
 {
-    var r = FindShrineInMap(xx, yy, vk_right);
+    var r = FindShrineInMap(xx, yy, layer, vk_right);
+    xx = r[0];
+    yy = r[1];
+}
+else if (CheckKey(global.k_up, E_PRESS))
+{
+    var metadata = GetCurrentRoom();
+    var groupId = metadata[? 'group-id'];
+    var layerCount = ds_list_size(global.dungeonMaps[? groupId]);
+    
+    ++layer;
+    if (layer &gt;= layerCount)
+        layer = 0;
+    
+    var r = FindShrineInMap(0, 0, layer, vk_right);
+    xx = r[0];
+    yy = r[1];
+}
+else if (CheckKey(global.k_down, E_PRESS))
+{
+    var metadata = GetCurrentRoom();
+    var groupId = metadata[? 'group-id'];
+    var layerCount = ds_list_size(global.dungeonMaps[? groupId]);
+    
+    --layer;
+    if (layer &lt;= 0)
+        layer = layerCount - 1;
+    
+    var r = FindShrineInMap(0, 0, layer, vk_right);
     xx = r[0];
     yy = r[1];
 }
@@ -159,7 +188,7 @@ DrawDungeonMap(
     dmLeft,
     dmTop,
     layer,
-    false,//ds_list_find_index(global.dungeonReveals, metadata[? 'group-id']) != -1,
+    ds_list_find_index(global.dungeonReveals, metadata[? 'group-id']) != -1,
     true
 );
 
@@ -172,7 +201,18 @@ draw_sprite(sHudMapCell, 8, mapLeft + xx * 12, dmTop + yy * 12);
 draw_set_color(c_black);
 draw_set_font(fDialogue);
 draw_set_halign(fa_center);
-draw_text(width / 2, height / 2 + 144 - 48, message);
+
+if (message == '')
+{
+    draw_text(
+        width / 2,
+        height / 2 + 144 - 48,
+        concat('[', GetKeyNameU(global.k_action), '] to teleport | [', GetKeyNameU(global.k_toggle_item_overlay), '] to cancel')
+    );
+}
+else
+    draw_text(width / 2, height / 2 + 144 - 48, message);
+
 draw_set_halign(fa_left);
 
 </string>
