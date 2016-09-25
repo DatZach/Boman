@@ -183,6 +183,7 @@ if (CheckKey(global.k_action, E_PRESS) &amp;&amp; collision)
         //      of the door
         global.destLayerDoorName = name;
         global.destLayerDoorId = id;
+        gsfx(sfxEnterDoor);
         SetRoom(dest);
     }
 }

@@ -46,7 +46,16 @@
   <NewExtensions>
     <extension index="0">extensions\Draw Text Outlined</extension>
   </NewExtensions>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sounds name="Music">
+      <sound>sound\bgOverworld01</sound>
+      <sound>sound\bgOverworld02</sound>
+    </sounds>
+    <sounds name="SFX">
+      <sound>sound\sfxJump</sound>
+      <sound>sound\sfxEnterDoor</sound>
+    </sounds>
+  </sounds>
   <sprites name="sprites">
     <sprites name="Actors">
       <sprites name="Player">
@@ -197,6 +206,14 @@
         <script>scripts\CheckKey.gml</script>
         <script>scripts\GetKeyName.gml</script>
         <script>scripts\GetKeyNameU.gml</script>
+      </scripts>
+      <scripts name="Sound">
+        <script>scripts\SeInitialize.gml</script>
+        <script>scripts\SeUpdate.gml</script>
+        <script>scripts\SeMusicStart.gml</script>
+        <script>scripts\SeSfx.gml</script>
+        <script>scripts\sfx.gml</script>
+        <script>scripts\gsfx.gml</script>
       </scripts>
       <script>scripts\SetRoom.gml</script>
     </scripts>

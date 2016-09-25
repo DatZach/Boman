@@ -58,6 +58,36 @@ ConsoleAddCommand(debugConsole, 'kill-player', DBG_KillPlayer);
         </arguments>
       </action>
     </event>
+    <event eventtype="2" enumb="11">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// SOUND_ENGINE - Fade Timer
+
+if (global.SE_PreviousMusic != noone)
+{
+    audio_stop_sound(global.SE_PreviousMusic);
+    global.SE_PreviousMusic = noone;
+}
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="2" enumb="0">
       <action>
         <libid>1</libid>
@@ -125,6 +155,32 @@ if (instance_exists(oPlayer))
         </arguments>
       </action>
     </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Engine Updates
+
+//SeUpdate();
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="7" enumb="4">
       <action>
         <libid>1</libid>
@@ -181,6 +237,10 @@ if (metadata[? 'group-id'] != global.previousAreaGroupId)
     FlushUncompletedShrines();
 
 global.previousAreaGroupId = metadata[? 'group-id'];
+
+// Play music for this area
+var musicId = metadata[? 'bg-music'];
+SeMusicStart(musicId, MusicFlags.Transition);
 
 </string>
           </argument>

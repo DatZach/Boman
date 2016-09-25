@@ -164,7 +164,14 @@ if (global.DBG_NoClip)
         global.DBG_NoClip = false;
 }
 else
+{
+    // Sound Effects (TODO - Break into another event?)
+    if (CheckKey(global.k_jump, E_PRESS))
+        sfx(sfxJump);
+    
+    // Platforming Engine
     event_inherited();
+}
 
 </string>
           </argument>

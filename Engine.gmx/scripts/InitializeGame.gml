@@ -2,6 +2,9 @@
     // Pre-Initialization
     gml_release_mode(RELEASE_MODE);
 
+    // Sound Engine
+    SeInitialize();
+    
     // Keymap
     InitializeKeymap();
     

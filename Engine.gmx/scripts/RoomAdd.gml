@@ -1,4 +1,4 @@
-/// RoomAdd(room, group-id, name, flags, tileX, tileY);
+/// RoomAdd(room, group-id, name, flags, tileX, tileY, music);
 
 {
     // Room Entry
@@ -10,6 +10,7 @@
         entry[? 'tile-x'] = argument4;
         entry[? 'tile-y'] = argument5;
         entry[? 'tile-z'] = 0;
+        entry[? 'bg-music'] = argument6;
     ds_map_add(global.rooms, argument0, entry);
     
     // Key Map Entry
