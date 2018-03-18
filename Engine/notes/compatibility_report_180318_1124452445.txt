@@ -1,0 +1,1748 @@
+Converting GML script: ${project_dir}\scripts\ResizeWindow\ResizeWindow.gml
+Converted description /// @description  ResizeWindow(width, height);/// @function  ResizeWindow
+/// @param width
+/// @param  height
+Converted string - line 9: 'Resolution = ' -> "Resolution = "
+Converted string - line 9: 'x' -> "x"
+
+Converting GML script: ${project_dir}\scripts\ConsoleCreate\ConsoleCreate.gml
+Converted description /// @description  ConsoleCreate
+Converted string - line 5: 'active' -> "active"
+Converted string - line 6: 'delimiter' -> "delimiter"
+Converted string - line 6: ' ' -> " "
+Converted string - line 7: 'cursor' -> "cursor"
+Converted string - line 8: 'history' -> "history"
+Converted string - line 9: 'commands' -> "commands"
+Converted string - line 10: 'seen-history' -> "seen-history"
+
+Converting GML script: ${project_dir}\scripts\ConsoleDestroy\ConsoleDestroy.gml
+Converted description /// @description  ConsoleDestroy(console);/// @function  ConsoleDestroy
+/// @param console
+
+Converting GML script: ${project_dir}\scripts\ConsoleToggle\ConsoleToggle.gml
+Converted description /// @description  ConsoleToggle(console);/// @function  ConsoleToggle
+/// @param console
+Converted string - line 6: 'active' -> "active"
+Converted string - line 6: 'active' -> "active"
+Converted string - line 7: 'seen-history' -> "seen-history"
+Converted string - line 7: 'history' -> "history"
+Converted string - line 8: '' -> ""
+
+Converting GML script: ${project_dir}\scripts\ConsoleAddCommand\ConsoleAddCommand.gml
+Converted description /// @description  ConsoleAddCommand(console, commandName, script);/// @function  ConsoleAddCommand
+/// @param console
+/// @param  commandName
+/// @param  script
+Converted string - line 12: 'name' -> "name"
+Converted string - line 13: 'scriptId' -> "scriptId"
+Converted string - line 15: 'commands' -> "commands"
+
+Converting GML script: ${project_dir}\scripts\ConsoleDraw\ConsoleDraw.gml
+Converted description /// @description  ConsoleDraw(console);/// @function  ConsoleDraw
+/// @param console
+Converted string - line 16: 'M' -> "M"
+Converted string - line 53: 'Unseen Messages' -> "Unseen Messages"
+Converted string - line 60: 'active' -> "active"
+Converted string - line 63: 'W' -> "W"
+Converted string - line 75: 'W' -> "W"
+Converted string - line 75: '# ' -> "# "
+Converted string - line 78: 'history' -> "history"
+Converted string - line 81: 'W' -> "W"
+Converted string - line 81: 'W' -> "W"
+
+Converting GML script: ${project_dir}\scripts\ConsoleExecute\ConsoleExecute.gml
+Converted description /// @description  ConsoleExecute(console);/// @function  ConsoleExecute
+/// @param console
+Converted string - line 8: 'active' -> "active"
+Converted string - line 13: ' ' -> " "
+Converted string - line 24: 'commands' -> "commands"
+Converted string - line 28: 'name' -> "name"
+Converted string - line 31: 'scriptId' -> "scriptId"
+Converted string - line 33: '' -> ""
+
+Converting GML script: ${project_dir}\scripts\ConsolePrint\ConsolePrint.gml
+Converted description /// @description  ConsolePrint(console, message);/// @function  ConsolePrint
+/// @param console
+/// @param  message
+Converted string - line 10: 'history' -> "history"
+
+Converting GML script: ${project_dir}\scripts\ConsoleActive\ConsoleActive.gml
+Converted description /// @description  ConsoleActive(console);/// @function  ConsoleActive
+/// @param console
+Converted string - line 7: 'active' -> "active"
+
+Converting GML script: ${project_dir}\scripts\ConsoleGetUnseenHistoryCount\ConsoleGetUnseenHistoryCount.gml
+Converted description /// @description  ConsoleGetUnseenHistoryCount(console);/// @function  ConsoleGetUnseenHistoryCount
+/// @param console
+Converted string - line 7: 'history' -> "history"
+Converted string - line 7: 'seen-history' -> "seen-history"
+
+Converting GML script: ${project_dir}\scripts\DBG_Echo\DBG_Echo.gml
+Converted string - line 5: '' -> ""
+Converted string - line 7: ' ' -> " "
+Converted string - line 9: 'Echo: ' -> "Echo: "
+
+Converting GML script: ${project_dir}\scripts\DBG_ToggleDebugOverlay\DBG_ToggleDebugOverlay.gml
+Converted string - line 5: '0' -> "0"
+
+Converting GML script: ${project_dir}\scripts\DBG_GotoNextRoom\DBG_GotoNextRoom.gml
+Converted string - line 11: 'No next room to go to' -> "No next room to go to"
+
+Converting GML script: ${project_dir}\scripts\DBG_GotoPreviousRoom\DBG_GotoPreviousRoom.gml
+Converted string - line 11: 'No previous room to go to' -> "No previous room to go to"
+
+Converting GML script: ${project_dir}\scripts\assert\assert.gml
+Converted description /// @description assert(message)/// @function assert
+/// @param message
+
+Converting GML script: ${project_dir}\scripts\key_check\key_check.gml
+Converted description /// @description key_check(key, event)/// @function key_check
+/// @param key
+/// @param  event
+
+Converting GML script: ${project_dir}\scripts\handle_event\handle_event.gml
+Converted description /// @description handle_event(specific_key)/// @function handle_event
+/// @param specific_key
+
+Converting GML script: ${project_dir}\scripts\CheckKey\CheckKey.gml
+Converted description /// @description  CheckKey(specific_key, event);/// @function  CheckKey
+/// @param specific_key
+/// @param  event
+
+Converting GML script: ${project_dir}\scripts\GetKeyName\GetKeyName.gml
+Converted description /// @description  GetKeyName(key);/// @function  GetKeyName
+/// @param key
+Converted string - line 9: '!' -> "!"
+Converted string - line 9: '~' -> "~"
+Converted string - line 15: 'space' -> "space"
+Converted string - line 16: 'no key' -> "no key"
+Converted string - line 17: 'any key' -> "any key"
+Converted string - line 18: 'left arrow' -> "left arrow"
+Converted string - line 19: 'right arrow' -> "right arrow"
+Converted string - line 20: 'up arrow' -> "up arrow"
+Converted string - line 21: 'down arrow' -> "down arrow"
+Converted string - line 22: 'return' -> "return"
+Converted string - line 23: 'escape' -> "escape"
+Converted string - line 24: 'shift' -> "shift"
+Converted string - line 25: 'control' -> "control"
+Converted string - line 26: 'alt' -> "alt"
+Converted string - line 27: 'backspace' -> "backspace"
+Converted string - line 28: 'tab' -> "tab"
+Converted string - line 29: 'home' -> "home"
+Converted string - line 30: 'end' -> "end"
+Converted string - line 31: 'delete' -> "delete"
+Converted string - line 32: 'insert' -> "insert"
+Converted string - line 33: 'page up' -> "page up"
+Converted string - line 34: 'page down' -> "page down"
+Converted string - line 35: 'pause' -> "pause"
+Converted string - line 36: 'print screen' -> "print screen"
+Converted string - line 37: 'f1' -> "f1"
+Converted string - line 38: 'f2' -> "f2"
+Converted string - line 39: 'f3' -> "f3"
+Converted string - line 40: 'f4' -> "f4"
+Converted string - line 41: 'f5' -> "f5"
+Converted string - line 42: 'f6' -> "f6"
+Converted string - line 43: 'f7' -> "f7"
+Converted string - line 44: 'f8' -> "f8"
+Converted string - line 45: 'f9' -> "f9"
+Converted string - line 46: 'f10' -> "f10"
+Converted string - line 47: 'f11' -> "f11"
+Converted string - line 48: 'f12' -> "f12"
+Converted string - line 49: 'numpad 0' -> "numpad 0"
+Converted string - line 50: 'numpad 1' -> "numpad 1"
+Converted string - line 51: 'numpad 2' -> "numpad 2"
+Converted string - line 52: 'numpad 3' -> "numpad 3"
+Converted string - line 53: 'numpad 4' -> "numpad 4"
+Converted string - line 54: 'numpad 5' -> "numpad 5"
+Converted string - line 55: 'numpad 6' -> "numpad 6"
+Converted string - line 56: 'numpad 7' -> "numpad 7"
+Converted string - line 57: 'numpad 8' -> "numpad 8"
+Converted string - line 58: 'numpad 9' -> "numpad 9"
+Converted string - line 59: 'numpad *' -> "numpad *"
+Converted string - line 60: 'numpad /' -> "numpad /"
+Converted string - line 61: 'numpad +' -> "numpad +"
+Converted string - line 62: 'numpad -' -> "numpad -"
+Converted string - line 63: 'numpad .' -> "numpad ."
+Converted string - line 67: 'unknown' -> "unknown"
+
+Converting GML script: ${project_dir}\scripts\GetKeyNameU\GetKeyNameU.gml
+Converted description /// @description  GetKeyNameU(key);/// @function  GetKeyNameU
+/// @param key
+
+Converting GML script: ${project_dir}\scripts\SeInitialize\SeInitialize.gml
+Converted description /// @description  SeInitialize();/// @function  SeInitialize
+
+Converting GML script: ${project_dir}\scripts\SeUpdate\SeUpdate.gml
+Converted description /// @description  SeUpdate();/// @function  SeUpdate
+
+Converting GML script: ${project_dir}\scripts\SeMusicStart\SeMusicStart.gml
+Converted description /// @description  SeMusicStart(sound, flags)/// @function  SeMusicStart
+/// @param sound
+/// @param  flags
+
+Converting GML script: ${project_dir}\scripts\SeSfx\SeSfx.gml
+Converted description /// @description  SeSfx(sound, flags);/// @function  SeSfx
+/// @param sound
+/// @param  flags
+
+Converting GML script: ${project_dir}\scripts\sfx\sfx.gml
+Converted description /// @description  sfx(sound);/// @function  sfx
+/// @param sound
+
+Converting GML script: ${project_dir}\scripts\gsfx\gsfx.gml
+Converted description /// @description  gsfx(sound);/// @function  gsfx
+/// @param sound
+
+Converting GML script: ${project_dir}\scripts\SetRoom\SetRoom.gml
+Converted description /// @description  GotoRoom(room)/// @function  GotoRoom
+/// @param room
+Converted string - line 9: 'SetRoom() - Room ID ' -> "SetRoom() - Room ID "
+Converted string - line 9: ' does not exist.' -> " does not exist."
+
+Converting GML script: ${project_dir}\scripts\InitializePhysicsEntity\InitializePhysicsEntity.gml
+Converted description /// @description  InitializePhysicsEntity(angle, velocity, weight, bouncy);/// @function  InitializePhysicsEntity
+/// @param angle
+/// @param  velocity
+/// @param  weight
+/// @param  bouncy
+Converted string - line 21: 'c1 = ' -> "c1 = "
+Converted string - line 21: '/' -> "/"
+Converted string - line 21: '; c2 = ' -> "; c2 = "
+Converted string - line 21: '/' -> "/"
+Converted string - line 21: '; l1 = ' -> "; l1 = "
+Converted string - line 21: '; l2 = ' -> "; l2 = "
+Converted string - line 21: '; r1 = ' -> "; r1 = "
+Converted string - line 21: '; r2 = ' -> "; r2 = "
+
+Converting GML script: ${project_dir}\scripts\Knockback\Knockback.gml
+Converted description /// @description  Knockback(originX, originY, power);/// @function  Knockback
+/// @param originX
+/// @param  originY
+/// @param  power
+Converted string - line 19: 'xspeed = ' -> "xspeed = "
+Converted string - line 19: 'kp = ' -> "kp = "
+Converted string - line 19: ' xms = ' -> " xms = "
+Converted string - line 19: ' dir = ' -> " dir = "
+
+Converting GML script: ${project_dir}\scripts\SpawnGold\SpawnGold.gml
+Converted description /// @description  SpawnGold(x, y, maxCoins, averageValue);/// @function  SpawnGold
+/// @param x
+/// @param  y
+/// @param  maxCoins
+/// @param  averageValue
+
+Converting GML script: ${project_dir}\scripts\AddHp\AddHp.gml
+Converted description /// @description  AddHp(points);/// @function  AddHp
+/// @param points
+
+Converting GML script: ${project_dir}\scripts\AddArrows\AddArrows.gml
+Converted description /// @description  AddArrows(arrows);/// @function  AddArrows
+/// @param arrows
+
+Converting GML script: ${project_dir}\scripts\AddArrowSegments\AddArrowSegments.gml
+Converted description /// @description  AddArrowSegments(segments);/// @function  AddArrowSegments
+/// @param segments
+
+Converting GML script: ${project_dir}\scripts\AddGold\AddGold.gml
+Converted description /// @description  AddGold(gold);/// @function  AddGold
+/// @param gold
+
+Converting GML script: ${project_dir}\scripts\DoBombAoE\DoBombAoE.gml
+Converted description /// @description  DoBombAoE(x, y);/// @function  DoBombAoE
+/// @param x
+/// @param  y
+
+Converting GML script: ${project_dir}\scripts\HandleArrowCollision\HandleArrowCollision.gml
+Converted description /// @description  HandleArrowCollision(inst)/// @function  HandleArrowCollision
+/// @param inst
+Converted string - line 16: 'Arrow collision!' -> "Arrow collision!"
+Converted string - line 40: 'Attached to ' -> "Attached to "
+
+Converting GML script: ${project_dir}\scripts\InitializeMob\InitializeMob.gml
+Converted description /// @description  InitializeMob(hp, level, dropRate)/// @function  InitializeMob
+/// @param hp
+/// @param  level
+/// @param  dropRate
+
+Converting GML script: ${project_dir}\scripts\MobAddHp\MobAddHp.gml
+Converted description /// @description  MobAddHp(points, inst);/// @function  MobAddHp
+/// @param points
+/// @param  inst
+
+Converting GML script: ${project_dir}\scripts\DoItemDrop\DoItemDrop.gml
+Converted description /// @description  DoItemDrop();/// @function  DoItemDrop
+
+Converting GML script: ${project_dir}\scripts\DbItemAdd\DbItemAdd.gml
+Converted description /// @description  DbItemAdd(imageIdx, name, description, minLevel, maxLevel, rarity, weight, type);/// @function  DbItemAdd
+/// @param imageIdx
+/// @param  name
+/// @param  description
+/// @param  minLevel
+/// @param  maxLevel
+/// @param  rarity
+/// @param  weight
+/// @param  type
+Converted string - line 15: 'image-index' -> "image-index"
+Converted string - line 16: 'name' -> "name"
+Converted string - line 17: 'description' -> "description"
+Converted string - line 18: 'min-level' -> "min-level"
+Converted string - line 19: 'max-level' -> "max-level"
+Converted string - line 20: 'rarity' -> "rarity"
+Converted string - line 21: 'weight' -> "weight"
+Converted string - line 22: 'type' -> "type"
+
+Converting GML script: ${project_dir}\scripts\ItemIsType\ItemIsType.gml
+Converted description /// @description  ItemIsType(item, flag);/// @function  ItemIsType
+/// @param item
+/// @param  flag
+Converted string - line 11: 'type' -> "type"
+
+Converting GML script: ${project_dir}\scripts\InventoryIndexOf\InventoryIndexOf.gml
+Converted description /// @description  InventoryIndexOf(inventory, dbItemIndex);/// @function  InventoryIndexOf
+/// @param inventory
+/// @param  dbItemIndex
+Converted string - line 15: 'db-item-index' -> "db-item-index"
+
+Converting GML script: ${project_dir}\scripts\InventoryItemOf\InventoryItemOf.gml
+Converted description /// @description  InventoryItemOf(inventory, dbItemIndex);/// @function  InventoryItemOf
+/// @param inventory
+/// @param  dbItemIndex
+Converted string - line 15: 'db-item-index' -> "db-item-index"
+
+Converting GML script: ${project_dir}\scripts\InventoryAdd\InventoryAdd.gml
+Converted description /// @description  InventoryAdd(inventory, itemIndex);/// @function  InventoryAdd
+/// @param inventory
+/// @param  itemIndex
+Converted string - line 14: 'type' -> "type"
+Converted string - line 19: 'max-stock' -> "max-stock"
+Converted string - line 19: 'stock' -> "stock"
+Converted string - line 19: 'max-stock' -> "max-stock"
+Converted string - line 22: 'stock' -> "stock"
+Converted string - line 29: 'db-item-index' -> "db-item-index"
+Converted string - line 30: 'stock' -> "stock"
+Converted string - line 31: 'max-stock' -> "max-stock"
+
+Converting GML script: ${project_dir}\scripts\InventoryRemoveIndex\InventoryRemoveIndex.gml
+Converted description /// @description  InventoryRemoveIndex(inventory, index);/// @function  InventoryRemoveIndex
+/// @param inventory
+/// @param  index
+Converted string - line 13: 'db-item-index' -> "db-item-index"
+Converted string - line 15: 'stock' -> "stock"
+Converted string - line 21: 'stock' -> "stock"
+Converted string - line 38: 'Pop from equip stack; value = ' -> "Pop from equip stack; value = "
+Converted string - line 38: '; count = ' -> "; count = "
+
+Converting GML script: ${project_dir}\scripts\InventoryRemoveItem\InventoryRemoveItem.gml
+Converted description /// @description  InventoryRemoveItem(inventory, dbItemIndex)/// @function  InventoryRemoveItem
+/// @param inventory
+/// @param  dbItemIndex
+
+Converting GML script: ${project_dir}\scripts\ItemChooseRandom\ItemChooseRandom.gml
+Converted description /// @description  ItemChooseRandom(level)/// @function  ItemChooseRandom
+/// @param level
+Converted string - line 14: 'min-level' -> "min-level"
+Converted string - line 14: 'max-level' -> "max-level"
+Converted string - line 15: 'rarity' -> "rarity"
+Converted string - line 24: 'min-level' -> "min-level"
+Converted string - line 24: 'max-level' -> "max-level"
+Converted string - line 26: 'rarity' -> "rarity"
+Converted string - line 34: 'ItemChooseRandom() failed to select an item!' -> "ItemChooseRandom() failed to select an item!"
+
+Converting GML script: ${project_dir}\scripts\GetEquippedItem\GetEquippedItem.gml
+Converted description /// @description  GetEquippedItem(slot)/// @function  GetEquippedItem
+/// @param slot
+
+Converting GML script: ${project_dir}\scripts\ConsumeItem\ConsumeItem.gml
+Converted description /// @description  ConsumeItem();/// @function  ConsumeItem
+Converted string - line 9: 'db-item-index' -> "db-item-index"
+Converted string - line 11: 'db-item-index' -> "db-item-index"
+
+Converting GML script: ${project_dir}\scripts\UseEquippedItem\UseEquippedItem.gml
+Converted description /// @description  UseEquippedItem(item);/// @function  UseEquippedItem
+/// @param item
+Converted string - line 10: 'db-item-index' -> "db-item-index"
+
+Converting GML script: ${project_dir}\scripts\InventoryPut\InventoryPut.gml
+Converted description /// @description  InventoryPut(itemIndex);/// @function  InventoryPut
+/// @param itemIndex
+
+Converting GML script: ${project_dir}\scripts\AllPuzzleElementsTriggered\AllPuzzleElementsTriggered.gml
+Converted description /// @description  AllPuzzleElementsTriggered(groupName);/// @function  AllPuzzleElementsTriggered
+/// @param groupName
+
+Converting GML script: ${project_dir}\scripts\InitializeStaticChest\InitializeStaticChest.gml
+Converted description /// @description  InitializeStaticChest(item1, item2, ...)/// @function  InitializeStaticChest
+/// @param item1
+/// @param  item2
+/// @param  ...
+
+Converting GML script: ${project_dir}\scripts\InitializeLeveledChest\InitializeLeveledChest.gml
+Converted description /// @description  InitializeLeveledChest(level);/// @function  InitializeLeveledChest
+/// @param level
+
+Converting GML script: ${project_dir}\scripts\GetRoomKeyCount\GetRoomKeyCount.gml
+Converted description /// @description  GetRoomKeyCount();/// @function  GetRoomKeyCount
+Converted string - line 7: 'group-id' -> "group-id"
+
+Converting GML script: ${project_dir}\scripts\AddKey\AddKey.gml
+Converted description /// @description  AddKey(count)/// @function  AddKey
+/// @param count
+Converted string - line 10: 'group-id' -> "group-id"
+
+Converting GML script: ${project_dir}\scripts\GuiGetShowKeyCount\GuiGetShowKeyCount.gml
+Converted description /// @description  GuiGetShowKeyCount()/// @function  GuiGetShowKeyCount
+Converted string - line 7: 'flags' -> "flags"
+
+Converting GML script: ${project_dir}\scripts\RoomAdd\RoomAdd.gml
+Converted description /// @description  RoomAdd(room, group-id, name, flags, tileX, tileY, music);/// @function  RoomAdd
+/// @param room
+/// @param  group-id
+/// @param  name
+/// @param  flags
+/// @param  tileX
+/// @param  tileY
+/// @param  music
+Converted string - line 14: 'room' -> "room"
+Converted string - line 15: 'group-id' -> "group-id"
+Converted string - line 16: 'name' -> "name"
+Converted string - line 17: 'flags' -> "flags"
+Converted string - line 18: 'tile-x' -> "tile-x"
+Converted string - line 19: 'tile-y' -> "tile-y"
+Converted string - line 20: 'tile-z' -> "tile-z"
+Converted string - line 21: 'bg-music' -> "bg-music"
+
+Converting GML script: ${project_dir}\scripts\RoomAddZ\RoomAddZ.gml
+Converted description /// @description  RoomAddZ(room, group-id, name, flags, tileX, tileY, tileZ, music);/// @function  RoomAddZ
+/// @param room
+/// @param  group-id
+/// @param  name
+/// @param  flags
+/// @param  tileX
+/// @param  tileY
+/// @param  tileZ
+/// @param  music
+Converted string - line 15: 'tile-z' -> "tile-z"
+
+Converting GML script: ${project_dir}\scripts\GetCurrentRoomName\GetCurrentRoomName.gml
+Converted description /// @description  GetCurrentRoomName()/// @function  GetCurrentRoomName
+Converted string - line 7: 'name' -> "name"
+
+Converting GML script: ${project_dir}\scripts\GetCurrentRoom\GetCurrentRoom.gml
+Converted description /// @description  GetCurrentRoom()/// @function  GetCurrentRoom
+
+Converting GML script: ${project_dir}\scripts\GetRoomName\GetRoomName.gml
+Converted description /// @description  GetRoomName(room)/// @function  GetRoomName
+/// @param room
+Converted string - line 8: 'name' -> "name"
+
+Converting GML script: ${project_dir}\scripts\LoadMapData\LoadMapData.gml
+Error: variable 'layer' has same name as a built-in (function, constant or variable), it must be renamed to function correctly
+Converted description /// @description  LoadMapData(region, relative-path);/// @function  LoadMapData
+/// @param region
+/// @param  relative-path
+Converted string - line 15: '\Rooms.txt' -> "\\Rooms.txt"
+Converted string - line 18: 'Failed to load map data (Rooms) for ' -> "Failed to load map data (Rooms) for "
+Converted string - line 30: '' -> ""
+Converted string - line 33: '' -> ""
+Converted string - line 42: '\' -> "\\"
+Converted string - line 42: '\Doors.txt' -> "\\Doors.txt"
+Converted string - line 45: 'Failed to load map data (Doors) for ' -> "Failed to load map data (Doors) for "
+Converted string - line 57: '' -> ""
+Converted string - line 60: '' -> ""
+Converted string - line 71: 'Map ' -> "Map "
+Converted string - line 71: ' maps/doors mismatch.' -> " maps/doors mismatch."
+
+Converting GML script: ${project_dir}\scripts\SpawnItem\SpawnItem.gml
+Converted description /// @description  SpawnItem(item, x, y, bounce);/// @function  SpawnItem
+/// @param item
+/// @param  x
+/// @param  y
+/// @param  bounce
+Converted string - line 16: 'Attempted to spawn non-existant item.' -> "Attempted to spawn non-existant item."
+Converted string - line 20: 'Spawning item ' -> "Spawning item "
+Converted string - line 20: 'name' -> "name"
+Converted string - line 24: 'image-index' -> "image-index"
+
+Converting GML script: ${project_dir}\scripts\oShrine_PrimaryMenu\oShrine_PrimaryMenu.gml
+Converted description /// @description  oShrine_PrimaryMenu(dialogue, index);/// @function  oShrine_PrimaryMenu
+/// @param dialogue
+/// @param  index
+Converted string - line 22: 'I cannot afford to sacrifice any more blood, I am on the verge of collapsing!' -> "I cannot afford to sacrifice any more blood, I am on the verge of collapsing!"
+Converted string - line 29: 'I have no reason to sacrifice blood right now...' -> "I have no reason to sacrifice blood right now..."
+Converted string - line 44: 'I do not have enough arrows to make a sacrifice that will please this shrine!' -> "I do not have enough arrows to make a sacrifice that will please this shrine!"
+Converted string - line 51: 'I have no no reason to sacrifice power right right now...' -> "I have no no reason to sacrifice power right right now..."
+
+Converting GML script: ${project_dir}\scripts\RegisterShrine\RegisterShrine.gml
+Converted description /// @description  RegisterShrine();/// @function  RegisterShrine
+Converted string - line 9: 'group-id' -> "group-id"
+Converted string - line 9: 'group-id' -> "group-id"
+Converted string - line 10: 'room' -> "room"
+Converted string - line 11: 'id' -> "id"
+Converted string - line 12: 'tile-id' -> "tile-id"
+
+Converting GML script: ${project_dir}\scripts\FlushUncompletedShrines\FlushUncompletedShrines.gml
+Converted description /// @description  FlushUncompletedShrines();/// @function  FlushUncompletedShrines
+Converted string - line 10: 'group-id' -> "group-id"
+
+Converting GML script: ${project_dir}\scripts\ShrineIsActive\ShrineIsActive.gml
+Converted description /// @description  ShrineIsActive();/// @function  ShrineIsActive
+Converted string - line 10: 'room' -> "room"
+Converted string - line 10: 'id' -> "id"
+
+Converting GML script: ${project_dir}\scripts\TeleportToShrine\TeleportToShrine.gml
+Converted description /// @description  TeleportToShrine(tile-id);/// @function  TeleportToShrine
+/// @param tile-id
+Converted string - line 13: 'tile-id' -> "tile-id"
+Converted string - line 15: 'id' -> "id"
+Converted string - line 16: 'room' -> "room"
+
+Converting GML script: ${project_dir}\scripts\SetCheckpoint\SetCheckpoint.gml
+Converted description /// @description  SetCheckpoint();/// @function  SetCheckpoint
+
+Converting GML script: ${project_dir}\scripts\RespawnToCheckpoint\RespawnToCheckpoint.gml
+Converted description /// @description  RespawnToCheckpoint();/// @function  RespawnToCheckpoint
+Converted string - line 8: 'Checkpoint room/id unset -- cannot respawn' -> "Checkpoint room/id unset -- cannot respawn"
+
+Converting GML script: ${project_dir}\scripts\CreateDialogue\CreateDialogue.gml
+Converted description /// @description  CreateDialogue(backdrop);/// @function  CreateDialogue
+/// @param backdrop
+
+Converting GML script: ${project_dir}\scripts\AddDialogue\AddDialogue.gml
+Converted description /// @description  AddDialogue(dialogue, side, portrait, name, value);/// @function  AddDialogue
+/// @param dialogue
+/// @param  side
+/// @param  portrait
+/// @param  name
+/// @param  value
+Converted string - line 13: 'type' -> "type"
+Converted string - line 14: 'side' -> "side"
+Converted string - line 15: 'portrait' -> "portrait"
+Converted string - line 16: 'name' -> "name"
+Converted string - line 17: 'script' -> "script"
+Converted string - line 18: 'value' -> "value"
+
+Converting GML script: ${project_dir}\scripts\AddDialogueScript\AddDialogueScript.gml
+Converted description /// @description  AddDialogueScript(dialogue, side, portrait, name, script, value);/// @function  AddDialogueScript
+/// @param dialogue
+/// @param  side
+/// @param  portrait
+/// @param  name
+/// @param  script
+/// @param  value
+Converted string - line 14: 'type' -> "type"
+Converted string - line 15: 'side' -> "side"
+Converted string - line 16: 'portrait' -> "portrait"
+Converted string - line 17: 'name' -> "name"
+Converted string - line 18: 'script' -> "script"
+Converted string - line 19: 'value' -> "value"
+
+Converting GML script: ${project_dir}\scripts\AddDialogueOptions\AddDialogueOptions.gml
+Converted description /// @description  AddDialogueOptions(dialogue, side, portrait, name, message, script, option0, option1, ...)/// @function  AddDialogueOptions
+/// @param dialogue
+/// @param  side
+/// @param  portrait
+/// @param  name
+/// @param  message
+/// @param  script
+/// @param  option0
+/// @param  option1
+/// @param  ...
+Converted string - line 19: 'type' -> "type"
+Converted string - line 20: 'side' -> "side"
+Converted string - line 21: 'portrait' -> "portrait"
+Converted string - line 22: 'name' -> "name"
+Converted string - line 23: 'value' -> "value"
+Converted string - line 24: 'script' -> "script"
+Converted string - line 25: 'option-count' -> "option-count"
+Converted string - line 28: 'option_' -> "option_"
+
+Converting GML script: ${project_dir}\scripts\AddDialogueOptionsList\AddDialogueOptionsList.gml
+Converted description /// @description  AddDialogueOptions(dialogue, side, portrait, name, message, script, option-array)/// @function  AddDialogueOptions
+/// @param dialogue
+/// @param  side
+/// @param  portrait
+/// @param  name
+/// @param  message
+/// @param  script
+/// @param  option-array
+Converted string - line 16: 'type' -> "type"
+Converted string - line 17: 'side' -> "side"
+Converted string - line 18: 'portrait' -> "portrait"
+Converted string - line 19: 'name' -> "name"
+Converted string - line 20: 'value' -> "value"
+Converted string - line 21: 'script' -> "script"
+Converted string - line 22: 'option-count' -> "option-count"
+Converted string - line 25: 'option_' -> "option_"
+
+Converting GML script: ${project_dir}\scripts\oShop_IntroMessage\oShop_IntroMessage.gml
+Converted description /// @description  oShop_IntroMessage()/// @function  oShop_IntroMessage
+
+Converting GML script: ${project_dir}\scripts\oShop_PrimaryMenu\oShop_PrimaryMenu.gml
+Converted description /// @description  oShop_PrimaryMenu(dialogue, index);/// @function  oShop_PrimaryMenu
+/// @param dialogue
+/// @param  index
+Converted string - line 20: 'db-item-index' -> "db-item-index"
+Converted string - line 24: 'name' -> "name"
+Converted string - line 24: ' - ' -> " - "
+Converted string - line 24: 'price' -> "price"
+Converted string - line 24: 'G' -> "G"
+Converted string - line 27: 'Actually, nevermind...' -> "Actually, nevermind..."
+Converted string - line 30: 'Take a look for yourself!' -> "Take a look for yourself!"
+Converted string - line 50: 'entry-text' -> "entry-text"
+Converted string - line 53: 'Actually, nevermind...' -> "Actually, nevermind..."
+Converted string - line 56: 'What do you want to talk about?' -> "What do you want to talk about?"
+
+Converting GML script: ${project_dir}\scripts\oShop_BuyItemMenu\oShop_BuyItemMenu.gml
+Converted description /// @description  oShop_BuyItemMenu(dialogue, index);/// @function  oShop_BuyItemMenu
+/// @param dialogue
+/// @param  index
+Converted string - line 16: 'db-item-index' -> "db-item-index"
+Converted string - line 17: 'price' -> "price"
+Converted string - line 25: 'Certainly! Hope this serves you well.' -> "Certainly! Hope this serves you well."
+
+Converting GML script: ${project_dir}\scripts\oShop_TalkMenu\oShop_TalkMenu.gml
+Converted description /// @description  oShop_TalkMenu(dialogue, index);/// @function  oShop_TalkMenu
+/// @param dialogue
+/// @param  index
+Converted string - line 16: 'dialogue-script' -> "dialogue-script"
+Converted string - line 17: 'text' -> "text"
+
+Converting GML script: ${project_dir}\scripts\CreateShop\CreateShop.gml
+Converted description /// @description  CreateShop(side, portrait, name, backdrop, intro);/// @function  CreateShop
+/// @param side
+/// @param  portrait
+/// @param  name
+/// @param  backdrop
+/// @param  intro
+Converted string - line 18: '' -> ""
+
+Converting GML script: ${project_dir}\scripts\AddShopItem\AddShopItem.gml
+Converted description /// @description  AddShopItem(shop, db-index, price);/// @function  AddShopItem
+/// @param shop
+/// @param  db-index
+/// @param  price
+Converted string - line 14: 'db-item-index' -> "db-item-index"
+Converted string - line 15: 'price' -> "price"
+
+Converting GML script: ${project_dir}\scripts\AddShopTalkExt\AddShopTalkExt.gml
+Converted description /// @description  AddShopTalk(shop, entry-text, dialogue-script);/// @function  AddShopTalk
+/// @param shop
+/// @param  entry-text
+/// @param  dialogue-script
+Converted string - line 14: 'entry-text' -> "entry-text"
+Converted string - line 15: 'dialogue-script' -> "dialogue-script"
+Converted string - line 16: 'text' -> "text"
+Converted string - line 16: '' -> ""
+
+Converting GML script: ${project_dir}\scripts\AddShopTalk\AddShopTalk.gml
+Converted description /// @description  AddShopTalk(shop, entry-text, dialogue-text);/// @function  AddShopTalk
+/// @param shop
+/// @param  entry-text
+/// @param  dialogue-text
+Converted string - line 14: 'entry-text' -> "entry-text"
+Converted string - line 15: 'dialogue-script' -> "dialogue-script"
+Converted string - line 16: 'text' -> "text"
+
+Converting GML script: ${project_dir}\scripts\ToastItem\ToastItem.gml
+Converted description /// @description  ToastItem(item-index)/// @function  ToastItem
+/// @param item-index
+Converted string - line 12: 'item-index' -> "item-index"
+Converted string - line 13: 'frames' -> "frames"
+Converted string - line 14: 'frame-inc' -> "frame-inc"
+
+Converting GML script: ${project_dir}\scripts\ToastArea\ToastArea.gml
+Converted description /// @description  ToastArea();/// @function  ToastArea
+
+Converting GML script: ${project_dir}\scripts\ToastCheckpoint\ToastCheckpoint.gml
+Converted description /// @description  ToastCheckpoint();/// @function  ToastCheckpoint
+
+Converting GML script: ${project_dir}\scripts\NotifyInteraction\NotifyInteraction.gml
+Converted description /// @description  NotifyInteraction(icon, text);/// @function  NotifyInteraction
+/// @param icon
+/// @param  text
+
+Converting GML script: ${project_dir}\scripts\DrawDungeonMap\DrawDungeonMap.gml
+Error: variable 'layer' has same name as a built-in (function, constant or variable), it must be renamed to function correctly
+Converted description /// @description  DrawDungeonMap(left, top, layer, revealed, compass);/// @function  DrawDungeonMap
+/// @param left
+/// @param  top
+/// @param  layer
+/// @param  revealed
+/// @param  compass
+Converted string - line 21: 'group-id' -> "group-id"
+Converted string - line 22: 'tile-x' -> "tile-x"
+Converted string - line 23: 'tile-y' -> "tile-y"
+Converted string - line 24: 'tile-z' -> "tile-z"
+Converted string - line 65: 'L' -> "L"
+Converted string - line 93: ' ' -> " "
+Converted string - line 96: '*' -> "*"
+Converted string - line 121: '7' -> "7"
+Converted string - line 121: '4' -> "4"
+Converted string - line 121: '1' -> "1"
+Converted string - line 121: '^' -> "^"
+Converted string - line 122: '<' -> "<"
+Converted string - line 122: 'v' -> "v"
+Converted string - line 122: '-' -> "-"
+Converted string - line 122: '+' -> "+"
+Converted string - line 123: '7' -> "7"
+Converted string - line 123: '8' -> "8"
+Converted string - line 123: '9' -> "9"
+Converted string - line 123: '^' -> "^"
+Converted string - line 124: '<' -> "<"
+Converted string - line 124: '>' -> ">"
+Converted string - line 124: '|' -> "|"
+Converted string - line 124: '+' -> "+"
+Converted string - line 125: '1' -> "1"
+Converted string - line 125: '2' -> "2"
+Converted string - line 125: '3' -> "3"
+Converted string - line 125: '<' -> "<"
+Converted string - line 126: '>' -> ">"
+Converted string - line 126: 'v' -> "v"
+Converted string - line 126: '|' -> "|"
+Converted string - line 126: '+' -> "+"
+Converted string - line 127: '9' -> "9"
+Converted string - line 127: '6' -> "6"
+Converted string - line 127: '3' -> "3"
+Converted string - line 127: '^' -> "^"
+Converted string - line 128: '>' -> ">"
+Converted string - line 128: 'v' -> "v"
+Converted string - line 128: '-' -> "-"
+Converted string - line 128: '+' -> "+"
+Converted string - line 137: '*' -> "*"
+
+Converting GML script: ${project_dir}\scripts\MarkDungeonMapReveal\MarkDungeonMapReveal.gml
+Converted description /// @description  MarkDungeonMapReveal();/// @function  MarkDungeonMapReveal
+Converted string - line 7: 'group-id' -> "group-id"
+
+Converting GML script: ${project_dir}\scripts\MarkDungeonMapCompass\MarkDungeonMapCompass.gml
+Converted description /// @description  MarkDungeonMapCompass();/// @function  MarkDungeonMapCompass
+Converted string - line 7: 'group-id' -> "group-id"
+
+Converting GML script: ${project_dir}\scripts\FindShrineInMap\FindShrineInMap.gml
+Error: variable 'layer' has same name as a built-in (function, constant or variable), it must be renamed to function correctly
+Converted description /// @description  FindShrineInMap(x, y, layer, dir);/// @function  FindShrineInMap
+/// @param x
+/// @param  y
+/// @param  layer
+/// @param  dir
+Converted string - line 16: 'group-id' -> "group-id"
+Converted string - line 54: 'mc = "' -> "mc = \""
+Converted string - line 54: '" ' -> "\" "
+Converted string - line 54: '/' -> "/"
+Converted string - line 84: 'SC - ' -> "SC - "
+Converted string - line 84: ',' -> ","
+Converted string - line 93: 'Not Found' -> "Not Found"
+
+Converting GML script: ${project_dir}\scripts\GetCurrentDungeonTileId\GetCurrentDungeonTileId.gml
+Error: variable 'layer' has same name as a built-in (function, constant or variable), it must be renamed to function correctly
+Converted description /// @description  GetCurrentDungeonTileId()/// @function  GetCurrentDungeonTileId
+Converted string - line 7: 'group-id' -> "group-id"
+Converted string - line 9: 'tile-z' -> "tile-z"
+Converted string - line 11: 'tile-y' -> "tile-y"
+Converted string - line 12: 'tile-x' -> "tile-x"
+
+Converting GML script: ${project_dir}\scripts\GetDungeonTileIdAt\GetDungeonTileIdAt.gml
+Error: variable 'layer' has same name as a built-in (function, constant or variable), it must be renamed to function correctly
+Converted description /// @description  GetDungeonTileIdAt(x, y, z)/// @function  GetDungeonTileIdAt
+/// @param x
+/// @param  y
+/// @param  z
+Converted string - line 14: 'group-id' -> "group-id"
+
+Converting GML script: ${project_dir}\scripts\CalculateSmoothAngle\CalculateSmoothAngle.gml
+Converted description /// @description  CalculateSmoothAngle(hspd, vspd, angle);/// @function  CalculateSmoothAngle
+/// @param hspd
+/// @param  vspd
+/// @param  angle
+
+Converting GML script: ${project_dir}\scripts\FxInitializeDesaturatedBlur\FxInitializeDesaturatedBlur.gml
+Converted builtin - line 17: view_wview[0] -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 18: view_hview[0] -> __view_get( e__VW.HView, 0 )
+Converted string - line 6: 'fade' -> "fade"
+Converted string - line 9: 'resolution' -> "resolution"
+Converted string - line 10: 'resolution' -> "resolution"
+Converted string - line 14: 'blur_amount' -> "blur_amount"
+Converted string - line 15: 'blur_amount' -> "blur_amount"
+Converted string - line 17: ' = ' -> " = "
+Converted string - line 18: ' = ' -> " = "
+
+Converting GML script: ${project_dir}\scripts\FxSmoke\FxSmoke.gml
+Converted description /// @description  FxSmoke(x, y, count);/// @function  FxSmoke
+/// @param x
+/// @param  y
+/// @param  count
+
+Converting GML script: ${project_dir}\scripts\iff\iff.gml
+Converted description /// @description iif(condition, branch_a, branch_b)/// @function iif
+/// @param condition
+/// @param  branch_a
+/// @param  branch_b
+
+Converting GML script: ${project_dir}\scripts\string_trim\string_trim.gml
+Converted description /// @description  string_trim(str)/// @function  string_trim
+/// @param str
+
+Converting GML script: ${project_dir}\scripts\string_parse\string_parse.gml
+Converted description /// @description  string_parse(str,token,ignore)/// @function  string_parse
+/// @param str
+/// @param token
+/// @param ignore
+
+Converting GML script: ${project_dir}\scripts\draw_text_outline\draw_text_outline.gml
+Converted description /// @description draw_text_outline(x,y,str,outwidth,outcol,outfidelity)/// @function draw_text_outline
+/// @param x
+/// @param y
+/// @param str
+/// @param outwidth
+/// @param outcol
+/// @param outfidelity
+
+Converting GML script: ${project_dir}\scripts\concat\concat.gml
+Converted description /// @description  concat(n1, n2, ...)/// @function  concat
+/// @param n1
+/// @param  n2
+/// @param  ...
+Converted string - line 9: '' -> ""
+
+Converting GML script: ${project_dir}\scripts\draw_text_outline_width\draw_text_outline_width.gml
+Converted description /// @description draw_text_outline(x,y,str,outwidth,outcol,outfidelity,lineWidth)/// @function draw_text_outline
+/// @param x
+/// @param y
+/// @param str
+/// @param outwidth
+/// @param outcol
+/// @param outfidelity
+/// @param lineWidth
+Converted string - line 18: 'W' -> "W"
+
+Converting GML script: ${project_dir}\scripts\HasFlag\HasFlag.gml
+Converted description /// @description  HasFlag(value, flag)/// @function  HasFlag
+/// @param value
+/// @param  flag
+
+Converting GML script: ${project_dir}\scripts\make_color_hex\make_color_hex.gml
+Converted description /// @description make_color_hex("#RRGGBB");/// @function make_color_hex
+/// @param "#RRGGBB"
+
+Converting GML script: ${project_dir}\scripts\IsNumeric\IsNumeric.gml
+Converted description /// @description  IsNumeric(char);/// @function  IsNumeric
+/// @param char
+Converted string - line 8: '0' -> "0"
+Converted string - line 8: '9' -> "9"
+
+Converting GML script: ${project_dir}\scripts\Dialogue01_OptionsTest\Dialogue01_OptionsTest.gml
+Converted string - line 9: 'Some Person' -> "Some Person"
+Converted string - line 10: '\1How cool is this dialogue system? Amiright or amirite?' -> "\\1How cool is this dialogue system? Amiright or amirite?"
+Converted string - line 16: 'Some Person' -> "Some Person"
+Converted string - line 17: '\1Of course! Here you go.' -> "\\1Of course! Here you go."
+Converted string - line 23: 'Some Person' -> "Some Person"
+Converted string - line 24: '\1Cheers, mate!' -> "\\1Cheers, mate!"
+
+Converting GML script: ${project_dir}\scripts\TestShop_Talk_GossipInit\TestShop_Talk_GossipInit.gml
+Converted string - line 6: 'Well,\z I have this dingy old treasure map that some old man sold me.\. Personally I have no use for it, I am just a simple cabbage lady. You can have it if you would like, maybe you will actually get somewhere with it!' -> "Well,\\z I have this dingy old treasure map that some old man sold me.\\. Personally I have no use for it, I am just a simple cabbage lady. You can have it if you would like, maybe you will actually get somewhere with it!"
+Converted string - line 15: 'Have you found anything with that map yet?' -> "Have you found anything with that map yet?"
+
+Converting GML script: ${project_dir}\scripts\DbRooms\DbRooms.gml
+Converted description /// @description  DbRooms();/// @function  DbRooms
+Converted string - line 23: 'DEBUG_TOWN' -> "DEBUG_TOWN"
+Converted string - line 24: 'DEBUG_LAKE' -> "DEBUG_LAKE"
+Converted string - line 25: 'DEBUG' -> "DEBUG"
+Converted string - line 30: 'DEBUG' -> "DEBUG"
+Converted string - line 30: 'Maps\DEBUG' -> "Maps\\DEBUG"
+Converted string - line 33: 'SYSTEM' -> "SYSTEM"
+Converted string - line 33: 'Initialization' -> "Initialization"
+Converted string - line 36: 'DEBUG_LAKE' -> "DEBUG_LAKE"
+Converted string - line 36: 'DEBUG - Platforming' -> "DEBUG - Platforming"
+Converted string - line 37: 'DEBUG' -> "DEBUG"
+Converted string - line 37: 'DEBUG - Mechanics' -> "DEBUG - Mechanics"
+Converted string - line 38: 'DEBUG' -> "DEBUG"
+Converted string - line 38: 'DEBUG - Particles' -> "DEBUG - Particles"
+Converted string - line 39: 'DEBUG' -> "DEBUG"
+Converted string - line 39: 'Mysterious Cave' -> "Mysterious Cave"
+Converted string - line 40: 'DEBUG' -> "DEBUG"
+Converted string - line 40: 'Mysterious Cave' -> "Mysterious Cave"
+Converted string - line 41: 'DEBUG_LAKE' -> "DEBUG_LAKE"
+Converted string - line 41: 'Outside the Mysterious Cave' -> "Outside the Mysterious Cave"
+Converted string - line 42: 'DEBUG' -> "DEBUG"
+Converted string - line 42: 'Mysterious Cave' -> "Mysterious Cave"
+Converted string - line 43: 'DEBUG_TOWN' -> "DEBUG_TOWN"
+Converted string - line 43: 'Reading Town' -> "Reading Town"
+Converted string - line 53: 'group-id' -> "group-id"
+Converted string - line 54: 'SYSTEM' -> "SYSTEM"
+Converted string - line 55: 'group-id' -> "group-id"
+
+Converting GML script: ${project_dir}\scripts\DbItems\DbItems.gml
+Converted description /// @description  DbItems()/// @function  DbItems
+Converted string - line 22: 'Lantern' -> "Lantern"
+Converted string - line 22: 'FLAVOR TEXT' -> "FLAVOR TEXT"
+Converted string - line 23: 'Bomb' -> "Bomb"
+Converted string - line 23: 'FLAVOR TEXT' -> "FLAVOR TEXT"
+Converted string - line 24: 'Rope' -> "Rope"
+Converted string - line 24: 'FLAVOR TEXT' -> "FLAVOR TEXT"
+Converted string - line 25: 'Gel' -> "Gel"
+Converted string - line 25: 'FLAVOR TEXT' -> "FLAVOR TEXT"
+Converted string - line 28: 'Key' -> "Key"
+Converted string - line 28: '' -> ""
+Converted string - line 29: 'Dungeon Map' -> "Dungeon Map"
+Converted string - line 29: '' -> ""
+Converted string - line 32: 'Red Medalion' -> "Red Medalion"
+Converted string - line 32: 'This relic was found deep underground.' -> "This relic was found deep underground."
+Converted string - line 33: 'Blue Medalion' -> "Blue Medalion"
+Converted string - line 33: 'This relic fills you with determination!' -> "This relic fills you with determination!"
+Converted string - line 34: 'Green Medalion' -> "Green Medalion"
+Converted string - line 34: 'Something, something, description' -> "Something, something, description"
+Converted string - line 35: 'Mushroom' -> "Mushroom"
+Converted string - line 35: 'Found in dank places.#+4 HP' -> "Found in dank places.#+4 HP"
+Converted string - line 36: 'Smoke Bomb' -> "Smoke Bomb"
+Converted string - line 36: 'The pungent smoke released temporarily blinds enemies, allowing for a swift escape.' -> "The pungent smoke released temporarily blinds enemies, allowing for a swift escape."
+Converted string - line 39: 'Statue of a Leaf Jumper' -> "Statue of a Leaf Jumper"
+Converted string - line 39: 'A statue of an ancient tiny yet energetic creature that used to inhabit this world.' -> "A statue of an ancient tiny yet energetic creature that used to inhabit this world."
+
+Converting GML script: ${project_dir}\scripts\InitializeKeymap\InitializeKeymap.gml
+Converted string - line 2: 'A' -> "A"
+Converted string - line 3: 'D' -> "D"
+Converted string - line 4: 'W' -> "W"
+Converted string - line 5: 'S' -> "S"
+Converted string - line 6: 'W' -> "W"
+Converted string - line 7: 'E' -> "E"
+
+Converting GML script: ${project_dir}\scripts\InitializeGame\InitializeGame.gml
+Converted string - line 18: 'DatZach' -> "DatZach"
+Converted string - line 40: '' -> ""
+Converted string - line 44: '' -> ""
+
+!!! Font fHudOverlay uses a font (Endless Boss Battle) not installed on this system - Font has NOT been regenerated
+!!! Font fItemOverlay_Header uses a font (Endless Boss Battle) not installed on this system - Font has NOT been regenerated
+!!! Font fItemOverlay_Item uses a font (Endless Boss Battle) not installed on this system - Font has NOT been regenerated
+!!! Font fDialogue uses a font (Pixel Operator) not installed on this system - Font has NOT been regenerated
+!!! Font fDialog_NamePlate uses a font (Pixelade) not installed on this system - Font has NOT been regenerated
+!!! Font fAreaToast uses a font (Breathe Fire) not installed on this system - Font has NOT been regenerated
+!!! Font fAreaToast_Subtitle uses a font (Breathe Fire) not installed on this system - Font has NOT been regenerated
+Converting GML script: ${project_dir}\objects\oController\Create_0.gml
+Converted description /// @description  Initialize Debug Console
+Converted string - line 17: 'echo' -> "echo"
+Converted string - line 18: 'spawn-test-mobs' -> "spawn-test-mobs"
+Converted string - line 19: 'dbgo' -> "dbgo"
+Converted string - line 20: 'nr' -> "nr"
+Converted string - line 21: 'pr' -> "pr"
+Converted string - line 22: 'rr' -> "rr"
+Converted string - line 23: 'aabb' -> "aabb"
+Converted string - line 24: 'maxstats' -> "maxstats"
+Converted string - line 25: 'toggle-hp' -> "toggle-hp"
+Converted string - line 26: 'nc' -> "nc"
+Converted string - line 27: 'kill-player' -> "kill-player"
+
+Converting GML script: ${project_dir}\objects\oController\Alarm_11.gml
+Converted description /// @description  SOUND_ENGINE - Fade Timer
+
+Converting GML script: ${project_dir}\objects\oController\Alarm_0.gml
+Converted description /// @description  Center Window after resizing it
+
+Converting GML script: ${project_dir}\objects\oController\Step_2.gml
+Converted builtin - line 17: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 18: view_yview[0] -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 5: view_wview[0] -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 6: view_hview[0] -> __view_get( e__VW.HView, 0 )
+Converted description /// @description  Handle Camera
+Converted builtin - line 17: view_xview[0] = floor(lerp(__view_get( e__VW.XView, 0 ), viewCenterX + newCamX, 0.45 -> __view_set( e__VW.XView, 0, floor(lerp(__view_get( e__VW.XView, 0 ), viewCenterX + newCamX, 0.45 )
+Converted builtin - line 18: view_yview[0] = floor(lerp(__view_get( e__VW.YView, 0 ), viewCenterY + newCamY, 0.45 -> __view_set( e__VW.YView, 0, floor(lerp(__view_get( e__VW.YView, 0 ), viewCenterY + newCamY, 0.45 )
+
+Converting GML script: ${project_dir}\objects\oController\Step_0.gml
+Converted description /// @description  Engine Updates
+
+Converting GML script: ${project_dir}\objects\oController\Other_4.gml
+Error: variable 'layer' has same name as a built-in (function, constant or variable), it must be renamed to function correctly
+Converted description /// @description  Universal Room Initialization
+Converted string - line 9: 'tile-x' -> "tile-x"
+Converted string - line 10: 'tile-y' -> "tile-y"
+Converted string - line 11: 'flags' -> "flags"
+Converted string - line 13: 'group-id' -> "group-id"
+Converted string - line 15: 'tile-z' -> "tile-z"
+Converted string - line 16: 'group-id' -> "group-id"
+Converted string - line 29: 'group-id' -> "group-id"
+Converted string - line 31: 'group-id' -> "group-id"
+Converted string - line 36: 'group-id' -> "group-id"
+Converted string - line 39: 'group-id' -> "group-id"
+Converted string - line 42: 'bg-music' -> "bg-music"
+
+Converting GML script: ${project_dir}\objects\oController\Other_3.gml
+Converted description /// @description  Cleanup resources
+
+Converting GML script: ${project_dir}\objects\oController\Other_2.gml
+Converted description /// @description  InitializeGame();/// @function  InitializeGame
+
+Converting GML script: ${project_dir}\objects\oController\Draw_64.gml
+Converted description /// @description  Draw Debug
+
+Converting GML script: ${project_dir}\objects\oController\Draw_0.gml
+Converted description /// @description  DEBUG - Draw AABB
+
+Converting GML script: ${project_dir}\objects\oController\KeyPress_123.gml
+Converted description /// @description  Toggle Debug Console
+
+Converting GML script: ${project_dir}\objects\oController\KeyPress_115.gml
+Converted string - line 3: 'DatZach' -> "DatZach"
+Converted string - line 4: '\@ff0000Lorem\@00ff00 ipsum\@0000ff dolor\! sit amet, consectetur \$sItemIcons16:4$ adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ' -> "\\@ff0000Lorem\\@00ff00 ipsum\\@0000ff dolor\\! sit amet, consectetur \\$sItemIcons16:4$ adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+Converted string - line 5: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\. Duis aute irure dolor in ' -> "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\\. Duis aute irure dolor in "
+Converted string - line 6: 'reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt ' -> "reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt "
+Converted string - line 7: 'in culpa qui officia deserunt mollit anim id est laborum.' -> "in culpa qui officia deserunt mollit anim id est laborum."
+Converted string - line 10: '???' -> "???"
+Converted string - line 14: 'DatZach' -> "DatZach"
+Converted string - line 15: '\1Hey, thanks man.' -> "\\1Hey, thanks man."
+Converted string - line 18: 'Cabbage Man' -> "Cabbage Man"
+Converted string - line 18: 'Welcome! How may I help you?' -> "Welcome! How may I help you?"
+Converted string - line 19: 'Talk' -> "Talk"
+Converted string - line 19: 'Take Item' -> "Take Item"
+Converted string - line 19: 'Exit' -> "Exit"
+
+Converting GML script: ${project_dir}\objects\oController\KeyPress_114.gml
+Converted string - line 4: 'Cabbage Lady' -> "Cabbage Lady"
+Converted string - line 6: 'Hey there! Got all your cabbage and cabbage accessories right here.' -> "Hey there! Got all your cabbage and cabbage accessories right here."
+Converted string - line 13: 'What wares do you buy?' -> "What wares do you buy?"
+Converted string - line 13: 'I specialize in explosive deals! I also like really rare doo-dads.' -> "I specialize in explosive deals! I also like really rare doo-dads."
+Converted string - line 14: 'Any local gossip?' -> "Any local gossip?"
+Converted string - line 15: 'Item 01' -> "Item 01"
+Converted string - line 15: 'Hello, World! 1' -> "Hello, World! 1"
+Converted string - line 16: 'Item 02' -> "Item 02"
+Converted string - line 16: 'Hello, World! 2' -> "Hello, World! 2"
+Converted string - line 17: 'Item 03' -> "Item 03"
+Converted string - line 17: 'Hello, World! 3' -> "Hello, World! 3"
+Converted string - line 18: 'Item 04' -> "Item 04"
+Converted string - line 18: 'Hello, World! 4' -> "Hello, World! 4"
+
+Converting GML script: ${project_dir}\objects\oController\KeyPress_13.gml
+Converted description /// @description  Debug Console Execute
+
+Converting GML script: ${project_dir}\objects\oHud\Create_0.gml
+Error: variable 'layer' has same name as a built-in (function, constant or variable), it must be renamed to function correctly
+Converted description /// @description  Initialize Overlay
+Converted string - line 53: '' -> ""
+
+Converting GML script: ${project_dir}\objects\oHud\Alarm_0.gml
+Converted description /// @description  Clear all toasts
+Converted string - line 7: 'frame-inc' -> "frame-inc"
+
+Converting GML script: ${project_dir}\objects\oHud\Step_1.gml
+Converted description /// @description  Clear interaction notification
+
+Converting GML script: ${project_dir}\objects\oHud\Step_0.gml
+Error: variable 'layer' has same name as a built-in (function, constant or variable), it must be renamed to function correctly
+Converted description /// @description  Update toasts
+Converted string - line 7: 'frames' -> "frames"
+Converted string - line 7: 'frame-inc' -> "frame-inc"
+Converted string - line 9: 'frames' -> "frames"
+Converted string - line 47: 'tile-z' -> "tile-z"
+Converted string - line 106: 'tile-z' -> "tile-z"
+Converted string - line 117: 'tile-z' -> "tile-z"
+Converted string - line 127: 'db-item-index' -> "db-item-index"
+Converted string - line 145: 'Equipped item-index ' -> "Equipped item-index "
+Converted string - line 145: '; stack = ' -> "; stack = "
+Converted string - line 153: 'flags' -> "flags"
+Converted string - line 164: 'flags' -> "flags"
+Converted string - line 166: 'group-id' -> "group-id"
+
+Converting GML script: ${project_dir}\objects\oHud\Draw_64.gml
+Error: variable 'layer' has same name as a built-in (function, constant or variable), it must be renamed to function correctly
+Converted description /// @description  Draw overlay - Toasts
+Converted string - line 12: 'frames' -> "frames"
+Converted string - line 13: 'item-index' -> "item-index"
+Converted string - line 14: 'name' -> "name"
+Converted string - line 39: 'image-index' -> "image-index"
+Converted string - line 158: 'db-item-index' -> "db-item-index"
+Converted string - line 160: 'image-index' -> "image-index"
+Converted string - line 161: 'name' -> "name"
+Converted string - line 173: '  |  Equip >' -> "  |  Equip >"
+Converted string - line 180: '  |  Consume >' -> "  |  Consume >"
+Converted string - line 189: 'max-stock' -> "max-stock"
+Converted string - line 192: 'stock' -> "stock"
+Converted string - line 192: ' / ' -> " / "
+Converted string - line 192: ' Stock' -> " Stock"
+Converted string - line 193: 'stock' -> "stock"
+Converted string - line 193: ' Stock' -> " Stock"
+Converted string - line 206: ' More Items' -> " More Items"
+Converted string - line 228: 'db-item-index' -> "db-item-index"
+Converted string - line 230: 'image-index' -> "image-index"
+Converted string - line 233: 'name' -> "name"
+Converted string - line 233: '##' -> "##"
+Converted string - line 233: 'description' -> "description"
+Converted string - line 263: 'flags' -> "flags"
+Converted string - line 269: 'group-id' -> "group-id"
+Converted string - line 270: 'group-id' -> "group-id"
+Converted string - line 316: 'tile-x' -> "tile-x"
+Converted string - line 317: 'tile-y' -> "tile-y"
+Converted string - line 323: 'name' -> "name"
+Converted string - line 351: 'db-item-index' -> "db-item-index"
+Converted string - line 353: 'image-index' -> "image-index"
+Converted string - line 354: 'type' -> "type"
+Converted string - line 359: 'stock' -> "stock"
+
+Converting GML script: ${project_dir}\objects\oHud\Draw_0.gml
+Converted description /// @description  Draw overlay - Interactive Action Toast
+
+Converting GML script: ${project_dir}\objects\oDialogue\Create_0.gml
+Converted description /// @description  Initialize dialogue
+Converted string - line 36: '' -> ""
+Converted string - line 37: '' -> ""
+
+Converting GML script: ${project_dir}\objects\oDialogue\Destroy_0.gml
+Converted description /// @description  Cleanup resources
+
+Converting GML script: ${project_dir}\objects\oDialogue\Alarm_2.gml
+Converted description /// @description  Text delay cooldown
+
+Converting GML script: ${project_dir}\objects\oDialogue\Alarm_1.gml
+Converted description /// @description  Reset double tap
+
+Converting GML script: ${project_dir}\objects\oDialogue\Alarm_0.gml
+Converted description /// @description  Finish dialogue initialization
+Converted string - line 5: 'Dialogue was not initialized with any content.' -> "Dialogue was not initialized with any content."
+Converted string - line 10: 'side' -> "side"
+Converted string - line 11: 'portrait' -> "portrait"
+Converted string - line 13: 'name' -> "name"
+
+Converting GML script: ${project_dir}\objects\oDialogue\Step_0.gml
+Converted description /// @description  Update dialogue
+Converted string - line 16: 'type' -> "type"
+Converted string - line 17: 'text' -> "text"
+Converted string - line 17: '' -> ""
+Converted string - line 18: 'text-color' -> "text-color"
+Converted string - line 19: 'sprite' -> "sprite"
+Converted string - line 20: 'image-index' -> "image-index"
+Converted string - line 28: 'type' -> "type"
+Converted string - line 29: 'value' -> "value"
+Converted string - line 37: '\' -> "\\"
+Converted string - line 42: '.' -> "."
+Converted string - line 52: 'z' -> "z"
+Converted string - line 72: '$' -> "$"
+Converted string - line 74: '' -> ""
+Converted string - line 82: '$' -> "$"
+Converted string - line 82: ':' -> ":"
+Converted string - line 88: ':' -> ":"
+Converted string - line 90: '' -> ""
+Converted string - line 96: '$' -> "$"
+Converted string - line 107: 'type' -> "type"
+Converted string - line 108: 'text' -> "text"
+Converted string - line 108: '' -> ""
+Converted string - line 109: 'text-color' -> "text-color"
+Converted string - line 110: 'sprite' -> "sprite"
+Converted string - line 111: 'image-index' -> "image-index"
+Converted string - line 114: 'type' -> "type"
+Converted string - line 115: 'text' -> "text"
+Converted string - line 115: '' -> ""
+Converted string - line 116: 'text-color' -> "text-color"
+Converted string - line 117: 'sprite' -> "sprite"
+Converted string - line 118: 'image-index' -> "image-index"
+Converted string - line 124: 'Unable to resolve sprite "' -> "Unable to resolve sprite \""
+Converted string - line 124: '"' -> "\""
+Converted string - line 128: '@' -> "@"
+Converted string - line 135: 'type' -> "type"
+Converted string - line 136: 'text' -> "text"
+Converted string - line 136: '' -> ""
+Converted string - line 137: 'text-color' -> "text-color"
+Converted string - line 138: 'sprite' -> "sprite"
+Converted string - line 139: 'image-index' -> "image-index"
+Converted string - line 146: '!' -> "!"
+Converted string - line 150: 'type' -> "type"
+Converted string - line 151: 'text' -> "text"
+Converted string - line 151: '' -> ""
+Converted string - line 152: 'text-color' -> "text-color"
+Converted string - line 153: 'sprite' -> "sprite"
+Converted string - line 154: 'image-index' -> "image-index"
+Converted string - line 161: '0' -> "0"
+Converted string - line 162: '1' -> "1"
+Converted string - line 163: '2' -> "2"
+Converted string - line 164: '3' -> "3"
+Converted string - line 165: '4' -> "4"
+Converted string - line 166: '5' -> "5"
+Converted string - line 167: '6' -> "6"
+Converted string - line 168: '7' -> "7"
+Converted string - line 169: '8' -> "8"
+Converted string - line 170: '9' -> "9"
+Converted string - line 171: 'side' -> "side"
+Converted string - line 178: 'text' -> "text"
+Converted string - line 201: 'script' -> "script"
+Converted string - line 226: 'side' -> "side"
+Converted string - line 227: 'portrait' -> "portrait"
+Converted string - line 228: 'name' -> "name"
+Converted string - line 247: 'option-count' -> "option-count"
+
+Converting GML script: ${project_dir}\objects\oDialogue\Draw_64.gml
+Converted description /// @description  Draw overlay - Dialogue
+Converted string - line 30: 'type' -> "type"
+Converted string - line 31: 'side' -> "side"
+Converted string - line 44: '???' -> "???"
+Converted string - line 81: '???' -> "???"
+Converted string - line 115: 'M' -> "M"
+Converted string - line 134: 'value' -> "value"
+Converted string - line 142: 'type' -> "type"
+Converted string - line 147: 'text' -> "text"
+Converted string - line 152: 'text-color' -> "text-color"
+Converted string - line 156: '' -> ""
+Converted string - line 177: 'sprite' -> "sprite"
+Converted string - line 178: 'image-index' -> "image-index"
+Converted string - line 209: 'value' -> "value"
+Converted string - line 216: 'text' -> "text"
+Converted string - line 222: 'option-count' -> "option-count"
+Converted string - line 229: 'option_' -> "option_"
+
+Converting GML script: ${project_dir}\objects\oShop\Create_0.gml
+Converted description /// @description  Initialize constants used for drawing
+
+Converting GML script: ${project_dir}\objects\oShop\Other_10.gml
+Converted description /// @description  Show primary menu
+Converted string - line 6: 'What can I do ya for?' -> "What can I do ya for?"
+Converted string - line 7: 'Take your time looking around.' -> "Take your time looking around."
+Converted string - line 10: 'Buy' -> "Buy"
+Converted string - line 10: 'Sell' -> "Sell"
+Converted string - line 10: 'Talk' -> "Talk"
+Converted string - line 10: 'Exit' -> "Exit"
+
+Converting GML script: ${project_dir}\objects\oShop\Draw_64.gml
+Converted description /// @description  Draw coins
+
+Converting GML script: ${project_dir}\objects\oAreaToast\Create_0.gml
+Converted description /// @description  Initialization
+
+Converting GML script: ${project_dir}\objects\oAreaToast\Alarm_0.gml
+Converted description /// @description  Animate out
+
+Converting GML script: ${project_dir}\objects\oAreaToast\Step_0.gml
+Converted description /// @description  Update target
+
+Converting GML script: ${project_dir}\objects\oAreaToast\Draw_64.gml
+Converted description /// @description  Draw overlay
+Converted string - line 13: 'M' -> "M"
+
+Converting GML script: ${project_dir}\objects\oDeathOverlay\Create_0.gml
+Converted description /// @description  Initialization
+Converted string - line 19: 'No one will remember you.' -> "No one will remember you."
+
+Converting GML script: ${project_dir}\objects\oDeathOverlay\Step_0.gml
+Converted description /// @description  Update intensity / Handle input
+
+Converting GML script: ${project_dir}\objects\oDeathOverlay\Draw_64.gml
+Converted description /// @description  Draw death overlay
+Converted string - line 13: 'W' -> "W"
+Converted string - line 16: 'Your Story has come to an End' -> "Your Story has come to an End"
+Converted string - line 25: 'Press [' -> "Press ["
+Converted string - line 25: '] to be reborn' -> "] to be reborn"
+
+Converting GML script: ${project_dir}\objects\oCheckpointToast\Create_0.gml
+Converted description /// @description  Initialize checkpoint toast
+Converted string - line 11: 'Checkpoint Reached' -> "Checkpoint Reached"
+
+Converting GML script: ${project_dir}\objects\oCheckpointToast\Step_0.gml
+Converted description /// @description  Update text animation
+
+Converting GML script: ${project_dir}\objects\oCheckpointToast\Other_7.gml
+Converted description /// @description  Handle checkmark finished
+
+Converting GML script: ${project_dir}\objects\oCheckpointToast\Draw_64.gml
+Converted description /// @description  Draw toast
+
+Converting GML script: ${project_dir}\objects\oTeleportOverlay\Create_0.gml
+Error: variable 'layer' has same name as a built-in (function, constant or variable), it must be renamed to function correctly
+Converted description /// @description  Initialize
+Converted string - line 4: 'tile-z' -> "tile-z"
+Converted string - line 10: '' -> ""
+
+Converting GML script: ${project_dir}\objects\oTeleportOverlay\Alarm_0.gml
+Converted description /// @description  Reset message
+Converted string - line 3: '' -> ""
+
+Converting GML script: ${project_dir}\objects\oTeleportOverlay\Step_0.gml
+Error: variable 'layer' has same name as a built-in (function, constant or variable), it must be renamed to function correctly
+Converted description /// @description  Handle input
+Converted string - line 18: 'group-id' -> "group-id"
+Converted string - line 32: 'group-id' -> "group-id"
+Converted string - line 51: 'Shrine not Active' -> "Shrine not Active"
+
+Converting GML script: ${project_dir}\objects\oTeleportOverlay\Draw_64.gml
+Error: variable 'layer' has same name as a built-in (function, constant or variable), it must be renamed to function correctly
+Converted description /// @description  Draw map overlay
+Converted string - line 21: 'group-id' -> "group-id"
+Converted string - line 35: '' -> ""
+Converted string - line 40: '[' -> "["
+Converted string - line 40: '] to teleport | [' -> "] to teleport | ["
+Converted string - line 40: '] to cancel' -> "] to cancel"
+
+Converting GML script: ${project_dir}\objects\oPauseMenu\Create_0.gml
+Converted description /// @description  Initialize
+Converted string - line 14: 'Options' -> "Options"
+Converted string - line 15: 'Return to Game' -> "Return to Game"
+Converted string - line 16: 'Exit to Main Menu' -> "Exit to Main Menu"
+
+Converting GML script: ${project_dir}\objects\oPauseMenu\Step_0.gml
+Converted description /// @description  Handle input / Update intenzity
+
+Converting GML script: ${project_dir}\objects\oPauseMenu\Draw_64.gml
+Converted description /// @description  Draw pause menu
+Converted string - line 8: 'W' -> "W"
+
+Converting GML script: ${project_dir}\objects\oWeaponBomb\Destroy_0.gml
+Converted description /// @description  AoE + Effects
+
+Converting GML script: ${project_dir}\objects\oWeaponBomb\Collision_968a037c-0b34-40dd-a842-65bfb6ecd4b4.gml
+Converted description /// @description  Arrows detonate bombs if they're flying
+
+Converting GML script: ${project_dir}\objects\oPlayer\Alarm_1.gml
+Converted description /// @description  Handle death
+
+Converting GML script: ${project_dir}\objects\oPlayer\Alarm_0.gml
+Converted description /// @description  Reset invincibility
+
+Converting GML script: ${project_dir}\objects\oPlayer\Step_0.gml
+Converted description /// @description  Handle death
+Converted string - line 112: 'db-item-index' -> "db-item-index"
+Converted string - line 116: 'db-item-index' -> "db-item-index"
+Converted string - line 120: 'db-item-index' -> "db-item-index"
+
+Converting GML script: ${project_dir}\objects\oPlayer\Mouse_53.gml
+Converted description /// @description  Reset the arrow status effect
+
+Converting GML script: ${project_dir}\objects\oPlayer\Other_11.gml
+Converted description /// @description  Handle respawn after death
+
+Converting GML script: ${project_dir}\objects\oPlayer\Other_10.gml
+Converted description /// @description  Set off temporary invincibility
+
+Converting GML script: ${project_dir}\objects\oPlayer\Other_4.gml
+Converted description /// @description  Doors & Checkpoint Respawning
+Converted string - line 44: '' -> ""
+Converted string - line 57: '' -> ""
+
+Converting GML script: ${project_dir}\objects\oPlayer\Other_0.gml
+Converted description /// @description  Prevent player from leaving the playing area
+
+Converting GML script: ${project_dir}\objects\oArrow\Create_0.gml
+Converted description /// @description  Initialize
+
+Converting GML script: ${project_dir}\objects\oArrow\Destroy_0.gml
+Converted description /// @description  AoE / Visual FX
+
+Converting GML script: ${project_dir}\objects\oArrow\Alarm_0.gml
+Converted description /// @description  Kill fire after it hits the ground
+
+Converting GML script: ${project_dir}\objects\oArrow\Step_2.gml
+Converted description /// @description  Update Image Angle
+
+Converting GML script: ${project_dir}\objects\oArrow\Step_0.gml
+Converted description /// @description  Handle Velocity / Collisions
+
+Converting GML script: ${project_dir}\objects\oArrow\Collision_12aa087d-2de1-4efa-8e2c-a40bb3bc0d5b.gml
+Converted description /// @description  Handle idle collision with player
+
+Converting GML script: ${project_dir}\objects\oArrow\Other_0.gml
+Converted description /// @description  Destroy arrows that go out of bounds
+
+Converting GML script: ${project_dir}\objects\oArrow\Draw_0.gml
+Converted description /// @description  Draw arrow
+
+Converting GML script: ${project_dir}\objects\pPlatformingEntity\Step_0.gml
+Converted description /// @description  Platforming Logic
+
+Converting GML script: ${project_dir}\objects\pStaticSolid\Create_0.gml
+Converted description /// @description  Properties
+
+Converting GML script: ${project_dir}\objects\pJumpThrough\Create_0.gml
+Converted description /// @description  Properties
+
+Converting GML script: ${project_dir}\objects\pPhysicsEntity\Create_0.gml
+Converted description /// @description  Initialize Physics
+
+Converting GML script: ${project_dir}\objects\pPhysicsEntity\Step_0.gml
+Converted description /// @description  Handle physics
+
+Converting GML script: ${project_dir}\objects\pMob\Create_0.gml
+Converted string - line 20: '' -> ""
+
+Converting GML script: ${project_dir}\objects\pMob\Destroy_0.gml
+Converted description /// @description  Cleanup resources
+
+Converting GML script: ${project_dir}\objects\pMob\Alarm_11.gml
+Converted description /// @description  Destroy this instance after death animation
+
+Converting GML script: ${project_dir}\objects\pMob\Alarm_2.gml
+Converted description /// @description  Reset invincibility
+
+Converting GML script: ${project_dir}\objects\pMob\Alarm_1.gml
+Converted description /// @description  Reset being aflame
+
+Converting GML script: ${project_dir}\objects\pMob\Alarm_0.gml
+Converted description /// @description  Flame damage
+
+Converting GML script: ${project_dir}\objects\pMob\Step_0.gml
+Converted description /// @description  Handle health
+
+Converting GML script: ${project_dir}\objects\pMob\Other_11.gml
+Converted description /// @description  Set aflame
+
+Converting GML script: ${project_dir}\objects\pMob\Other_10.gml
+Converted description /// @description  Set off temporary invincibility
+
+Converting GML script: ${project_dir}\objects\pMob\Draw_0.gml
+Converted string - line 25: ' / ' -> " / "
+
+Converting GML script: ${project_dir}\objects\oMobPerson\Step_0.gml
+Converted description /// @description  Handle random movement
+
+Converting GML script: ${project_dir}\objects\oMobTurtle\Alarm_1.gml
+Converted description /// @description  Reset immobility
+
+Converting GML script: ${project_dir}\objects\oMobTurtle\Alarm_0.gml
+Converted description /// @description  Handle movement
+
+Converting GML script: ${project_dir}\objects\oMobTurtle\Step_0.gml
+Converted description /// @description  Handle player jumping on me
+
+Converting GML script: ${project_dir}\objects\pPuzzleElement\Create_0.gml
+Converted description /// @description  Initialize puzzle element
+Converted string - line 5: '' -> ""
+
+Converting GML script: ${project_dir}\objects\pPuzzleElement\Alarm_0.gml
+Converted description /// @description  DEBUG MODE -- Verify groups are setup
+Converted string - line 3: '' -> ""
+Converted string - line 4: 'WARNING - No group assigned to ' -> "WARNING - No group assigned to "
+Converted string - line 4: ' (' -> " ("
+Converted string - line 4: ')' -> ")"
+
+Converting GML script: ${project_dir}\objects\oTarget\Collision_68829a82-6eae-45db-9670-3db6541c83db.gml
+Converted description /// @description  Toggle trigger
+
+Converting GML script: ${project_dir}\objects\oFloorSwitch\Create_0.gml
+Converted string - line 6: '' -> ""
+
+Converting GML script: ${project_dir}\objects\oFloorSwitch\Step_0.gml
+Converted description /// @description  Handle untriggered the switch
+Converted string - line 9: '' -> ""
+Converted string - line 12: 'group-id' -> "group-id"
+Converted string - line 18: 'Sounds like something shifted in another room.' -> "Sounds like something shifted in another room."
+
+Converting GML script: ${project_dir}\objects\oDoor\Create_0.gml
+Converted string - line 4: '' -> ""
+Converted string - line 5: '' -> ""
+
+Converting GML script: ${project_dir}\objects\oDoor\Alarm_1.gml
+Converted description /// @description  Unlock this door if it's unlocked
+Converted string - line 3: '' -> ""
+Converted string - line 6: 'group-id' -> "group-id"
+
+Converting GML script: ${project_dir}\objects\oDoor\Alarm_0.gml
+Converted description /// @description  DEBUG MODE -- Verify groups are setup
+Converted string - line 3: '' -> ""
+Converted string - line 4: 'WARNING - No group assigned to ' -> "WARNING - No group assigned to "
+Converted string - line 4: ' (' -> " ("
+Converted string - line 4: ')' -> ")"
+Converted string - line 6: '' -> ""
+Converted string - line 7: 'WARNING - No name assigned to locked door.' -> "WARNING - No name assigned to locked door."
+
+Converting GML script: ${project_dir}\objects\oDoor\Step_0.gml
+Converted string - line 1: '' -> ""
+Converted string - line 7: 'Unlock' -> "Unlock"
+Converted string - line 11: 'group-id' -> "group-id"
+Converted string - line 18: 'Locked Door' -> "Locked Door"
+
+Converting GML script: ${project_dir}\objects\oDoor\Other_4.gml
+Converted description /// @description  Check if this door should be opened or not
+
+Converting GML script: ${project_dir}\objects\oArrowSegment\Other_0.gml
+Converted description /// @description  Destroy instance
+
+Converting GML script: ${project_dir}\objects\oGoldCoin\Create_0.gml
+Converted string - line 17: 'Gold spawn' -> "Gold spawn"
+
+Converting GML script: ${project_dir}\objects\oGoldCoin\Other_0.gml
+Converted description /// @description  Destroy instance
+
+Converting GML script: ${project_dir}\objects\oItem\Alarm_0.gml
+Converted description /// @description  Mark that this item can now be picked up
+
+Converting GML script: ${project_dir}\objects\oItem\Collision_f9f1bca3-18e1-4194-a093-8c8c21951c03.gml
+Converted description /// @description  Pickup item
+
+Converting GML script: ${project_dir}\objects\oItem\Other_0.gml
+Converted description /// @description  Destroy instance
+
+Converting GML script: ${project_dir}\objects\oSignPost\Create_0.gml
+Converted description /// @description  Initialize signpost
+Converted string - line 3: '' -> ""
+
+Converting GML script: ${project_dir}\objects\oSignPost\Alarm_0.gml
+Converted description /// @description  Verify that this was setup correctly
+Converted string - line 3: '' -> ""
+Converted string - line 4: 'Signpost ' -> "Signpost "
+Converted string - line 4: ' has no message.' -> " has no message."
+
+Converting GML script: ${project_dir}\objects\oSignPost\Step_0.gml
+Converted string - line 3: 'Read Sign' -> "Read Sign"
+Converted string - line 11: 'Sign Post' -> "Sign Post"
+
+Converting GML script: ${project_dir}\objects\oChest\Create_0.gml
+Converted description /// @description  Initialize chest
+
+Converting GML script: ${project_dir}\objects\oChest\Destroy_0.gml
+Converted description /// @description  Cleanup resources
+
+Converting GML script: ${project_dir}\objects\oChest\Alarm_0.gml
+Converted description /// @description  DEBUG - Ensure that chest was initialized correctly
+Converted string - line 4: 'Chest ' -> "Chest "
+Converted string - line 4: ' was not initialized correctly' -> " was not initialized correctly"
+
+Converting GML script: ${project_dir}\objects\oChest\Step_1.gml
+Converted description /// @description  Handle player interaction
+Converted string - line 8: 'Open Chest' -> "Open Chest"
+
+Converting GML script: ${project_dir}\objects\oChest\Draw_0.gml
+Converted description /// @description  Draw the correct image index for the chest's current state
+
+Converting GML script: ${project_dir}\objects\oVine\Alarm_1.gml
+Converted description /// @description  Set adjacent vines on fire
+
+Converting GML script: ${project_dir}\objects\oVine\Alarm_0.gml
+Converted description /// @description  Destroy instance after being aflame
+
+Converting GML script: ${project_dir}\objects\oVine\Collision_9a8ecf11-238f-4a26-a14c-1d997e70c156.gml
+Converted description /// @description  Set self aflame if mob is aflame
+
+Converting GML script: ${project_dir}\objects\oVine\Collision_71d026a6-e1b7-4bd2-a73a-eed53d311751.gml
+Converted description /// @description  Set vine on fire if arrow is on fire
+
+Converting GML script: ${project_dir}\objects\oVine\Other_10.gml
+Converted description /// @description  Set this vine on fire
+
+Converting GML script: ${project_dir}\objects\oLayerDoor\Create_0.gml
+Converted description /// @description  Initialize door
+Converted string - line 4: '' -> ""
+Converted string - line 5: '' -> ""
+
+Converting GML script: ${project_dir}\objects\oLayerDoor\Alarm_1.gml
+Converted description /// @description  Unlock door if it's been registered before
+Converted string - line 4: 'group-id' -> "group-id"
+
+Converting GML script: ${project_dir}\objects\oLayerDoor\Alarm_0.gml
+Converted description /// @description  DEBUG - Verify that the door was initialize correctly
+Converted string - line 3: '' -> ""
+Converted string - line 4: 'The door ' -> "The door "
+Converted string - line 4: ' does not have a valid destination.' -> " does not have a valid destination."
+
+Converting GML script: ${project_dir}\objects\oLayerDoor\Step_1.gml
+Converted description /// @description  Handle player interaction
+Converted string - line 3: '' -> ""
+Converted string - line 19: '' -> ""
+Converted string - line 22: 'Unlock' -> "Unlock"
+Converted string - line 24: 'Door Locked by Key' -> "Door Locked by Key"
+Converted string - line 27: 'Door Locked by Mechanism' -> "Door Locked by Mechanism"
+Converted string - line 34: 'group-id' -> "group-id"
+Converted string - line 34: 'group-id' -> "group-id"
+Converted string - line 35: 'Enter' -> "Enter"
+Converted string - line 36: 'Enter ' -> "Enter "
+Converted string - line 36: 'name' -> "name"
+Converted string - line 51: '' -> ""
+Converted string - line 54: 'group-id' -> "group-id"
+
+Converting GML script: ${project_dir}\objects\oShrine\Create_0.gml
+Converted description /// @description  Initialization
+Converted string - line 7: 'Shrine' -> "Shrine"
+
+Converting GML script: ${project_dir}\objects\oShrine\Step_0.gml
+Converted description /// @description  Handle interaction
+Converted string - line 7: 'Activate Shrine' -> "Activate Shrine"
+Converted string - line 9: 'Interact with Shrine' -> "Interact with Shrine"
+Converted string - line 25: 'A mysterious power can be felt around this ancient shrine.' -> "A mysterious power can be felt around this ancient shrine."
+Converted string - line 27: 'Teleport' -> "Teleport"
+Converted string - line 27: 'Blood Sacrifice' -> "Blood Sacrifice"
+Converted string - line 27: 'Power Sacrifice' -> "Power Sacrifice"
+Converted string - line 27: 'Leave' -> "Leave"
+
+Converting GML script: ${project_dir}\objects\oShrine\Other_4.gml
+Converted description /// @description  Reset active when re-entering a room
+
+Converting GML script: ${project_dir}\objects\oShrine\Draw_0.gml
+Converted description /// @description  Draw shrine
+
+Converting GML script: ${project_dir}\objects\oAreaCheckpoint\Other_4.gml
+Converted description /// @description  Set this as the checkpoint for this area
+
+Converting GML script: instance inst_AE6D5135 creation code
+Converted string - line 2: 'entry' -> "entry"
+
+Converting GML script: instance inst_3899AF0D creation code
+Converted string - line 1: 'room01' -> "room01"
+
+Converting GML script: instance inst_9953A7C7 creation code
+Converted string - line 1: 'room01' -> "room01"
+
+Converting GML script: instance inst_C0C65A7C creation code
+Converted string - line 1: 'cor01' -> "cor01"
+
+Converting GML script: instance inst_581B11A4 creation code
+Converted string - line 1: 'room02' -> "room02"
+
+Converting GML script: instance inst_624F86DC creation code
+Converted string - line 1: 'room02' -> "room02"
+
+Converting GML script: instance inst_811D348C creation code
+Converted string - line 1: 'cor01' -> "cor01"
+
+Converting GML script: instance inst_3238DC82 creation code
+Converted string - line 1: 'room03' -> "room03"
+
+Converting GML script: instance inst_19B9D9F8 creation code
+Converted string - line 1: 'room03' -> "room03"
+
+Converting GML script: instance inst_5E553D24 creation code
+Converted string - line 1: 'room03_01' -> "room03_01"
+
+Converting GML script: instance inst_7E4F8C66 creation code
+Converted string - line 1: 'room03_01' -> "room03_01"
+
+Converting GML script: instance inst_6AB53C6A creation code
+Converted string - line 2: 'door01' -> "door01"
+
+Converting GML script: instance inst_C53E6527 creation code
+Converted string - line 1: "Hi there!\. I'm a signpost!" -> "Hi there!\\. I'm a signpost!"
+
+Converting GML script: instance inst_1447B9E7 creation code
+Converted string - line 2: 'entry' -> "entry"
+
+Converting GML script: instance inst_BD0412D7 creation code
+Converted string - line 2: 'door-test' -> "door-test"
+
+Converting GML script: instance inst_634D7541 creation code
+Converted string - line 1: 'other-room-door' -> "other-room-door"
+
+Converting GML script: instance inst_18C8FCB9 creation code
+Converted string - line 1: 'group01' -> "group01"
+
+Converting GML script: instance inst_A4475274 creation code
+Converted string - line 1: 'group02' -> "group02"
+
+Converting GML script: instance inst_316524F3 creation code
+Converted string - line 1: 'group02' -> "group02"
+
+Converting GML script: instance inst_4FF83ED3 creation code
+Converted string - line 1: 'group01' -> "group01"
+
+Converting GML script: instance inst_9363BF4E creation code
+Converted string - line 1: 'group03' -> "group03"
+
+Converting GML script: instance inst_C464CBB7 creation code
+Converted string - line 1: 'group03' -> "group03"
+
+Converting GML script: instance inst_384F9AE1 creation code
+Converted string - line 1: 'group01' -> "group01"
+
+Converting GML script: instance inst_17FD6E4C creation code
+Converted string - line 2: 'door01' -> "door01"
+
+Converting GML script: instance inst_8DC8666D creation code
+Converted string - line 1: 'group05' -> "group05"
+
+Converting GML script: instance inst_058560DE creation code
+Converted string - line 1: 'group05' -> "group05"
+
+Converting GML script: instance inst_380D71E0 creation code
+Converted string - line 2: '02-03' -> "02-03"
+
+Converting GML script: instance inst_83BFD7C8 creation code
+Converted string - line 2: '02-03' -> "02-03"
+
+Converting GML script: instance inst_4E3493F9 creation code
+Converted string - line 1: 'Congrats! You beat the dungeon.' -> "Congrats! You beat the dungeon."
+
+macOS icon ${options_dir}\mac\icons\icon512.png written out as 32-bit
+Windows NSIS Installer Script has been set to default due to changes in GameMaker Studio 2
+Converting GML script: instance inst_97F7D53B creation code
+Converted string - line 1: '01' -> "01"
+
+Converting GML script: instance inst_38E682F3 creation code
+Converted string - line 1: '01' -> "01"
+
+Converting GML script: instance inst_32EA0596 creation code
+Converted string - line 1: '02' -> "02"
+
+Converting GML script: instance inst_46E4DDB3 creation code
+Converted string - line 1: '02' -> "02"
+
+Converting GML script: instance inst_6171F992 creation code
+Converted string - line 1: '03' -> "03"
+
+Converting GML script: instance inst_FE74A4B2 creation code
+Converted string - line 1: '03' -> "03"
+
+Converting GML script: instance inst_482FCDAC creation code
+Converted string - line 3: 'image-index' -> "image-index"
+
+Converting GML script: instance inst_B13A9278 creation code
+Converted string - line 2: 'B13A9278' -> "B13A9278"
+
+Converting GML script: instance inst_D58B8D55 creation code
+Converted string - line 2: 'door-test' -> "door-test"
+
+Converting GML script: instance inst_D46634CC creation code
+Converted string - line 2: 'rDebug04_Dungeon04_d01' -> "rDebug04_Dungeon04_d01"
+
+Converting GML script: instance inst_962B4E40 creation code
+Converted string - line 2: 'rDebug04_Dungeon04_d01' -> "rDebug04_Dungeon04_d01"
+
+Converting GML script: instance inst_67C6C8CF creation code
+Converted string - line 2: 'd02' -> "d02"
+Converted string - line 3: 'dt01' -> "dt01"
+
+Converting GML script: instance inst_A2318E08 creation code
+Converted string - line 1: 'dt01' -> "dt01"
+
+Converting GML script: instance inst_0714778C creation code
+Converted string - line 2: 'd02' -> "d02"
+
+Converting GML script: instance inst_05C2622E creation code
+Converted string - line 2: 'd03' -> "d03"
+Converted string - line 3: 'dt02' -> "dt02"
+
+Converting GML script: instance inst_B6C55B3A creation code
+Converted string - line 1: 'dt02' -> "dt02"
+
+Converting GML script: instance inst_FDE5F094 creation code
+Converted string - line 2: 'd03' -> "d03"
+
+Converting GML script: instance inst_55DBDDC9 creation code
+Converted string - line 2: 'd05' -> "d05"
+Converted string - line 3: 'dt03' -> "dt03"
+
+Converting GML script: instance inst_06317643 creation code
+Converted string - line 2: 'd05' -> "d05"
+
+Converting GML script: instance inst_E482885C creation code
+Converted string - line 2: 'd06' -> "d06"
+
+Converting GML script: instance inst_39BEEA51 creation code
+Converted string - line 2: 'd06' -> "d06"
+
+Converting GML script: instance inst_40D79191 creation code
+Converted string - line 1: 'dt03' -> "dt03"
+
+Converting GML script: instance inst_D3CC39AC creation code
+Converted string - line 3: 'image-index' -> "image-index"
+
+Converting GML script: instance inst_0DB64B87 creation code
+Converted string - line 2: 'other-room-door' -> "other-room-door"
+Converted string - line 3: 'other-room-door' -> "other-room-door"
+
+Missing audiogroup for sound: 'bgOverworld01' - setting to default audio group
+Missing audiogroup for sound: 'bgOverworld02' - setting to default audio group
+Missing audiogroup for sound: 'sfxJump' - setting to default audio group
+Missing audiogroup for sound: 'sfxEnterDoor' - setting to default audio group
+Game speed set to 30
+Added compatibility script 'action/action_inherited.gml'
+Added compatibility script 'background/draw_background.gml'
+Added compatibility script 'instance/instance_create.gml'
+Added compatibility script 'object/object_get_depth.gml'
+Added compatibility script 'view/room_set_view.gml'
+Added compatibility script 'view/__view_get.gml'
+Added compatibility script 'view/__view_set.gml'
+Added compatibility script 'view/__view_set_internal.gml'
+Added compatibility script 'action/__init_action.gml'
+Added compatibility script 'background/__init_background.gml'
+Added compatibility script 'view/__init_view.gml'
+Added compatibility script '__init_global.gml'
+Added compatibility script '__global_object_depths.gml'

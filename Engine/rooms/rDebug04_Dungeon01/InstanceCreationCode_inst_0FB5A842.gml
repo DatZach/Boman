@@ -1,0 +1,1 @@
+InitializeLeveledChest(1);

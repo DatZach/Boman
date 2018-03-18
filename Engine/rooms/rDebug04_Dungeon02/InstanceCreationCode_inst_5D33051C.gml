@@ -1,0 +1,1 @@
+InitializeStaticChest(global.KNICKKNACK_LeafJumperStatue);
