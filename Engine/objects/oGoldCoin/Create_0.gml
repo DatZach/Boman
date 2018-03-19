@@ -1,4 +1,3 @@
-action_inherited();
 /// Initialize physics
 
 InitializePhysicsEntity(
@@ -15,4 +14,3 @@ offset = irandom(500);
 value = 0;
 
 show_debug_message("Gold spawn");
-

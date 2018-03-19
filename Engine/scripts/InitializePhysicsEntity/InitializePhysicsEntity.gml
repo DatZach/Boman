@@ -7,6 +7,8 @@
 // Refer to oPhysicsEntity for details on these properties
 
 {
+	event_inherited();
+	
     angle = argument0;
     velocity = argument1;
     weight = argument2;

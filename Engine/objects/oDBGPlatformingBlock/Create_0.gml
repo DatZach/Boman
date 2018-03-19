@@ -1,4 +1,5 @@
-action_inherited();
+event_inherited();
+
 PLAYER_NUMBER = 2;
 
 moveLeft = false;
@@ -8,4 +9,3 @@ moveDown = false;
 moveJump = false;
 
 xmaxspeed = 1;
-

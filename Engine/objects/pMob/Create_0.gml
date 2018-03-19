@@ -1,4 +1,5 @@
-action_inherited();
+event_inherited();
+
 PLAYER_NUMBER = 2;
 
 hardSurface = false;
@@ -21,5 +22,3 @@ group = "";
 dying = false;
 
 alarm[0] = room_speed * 0.5;
-
-

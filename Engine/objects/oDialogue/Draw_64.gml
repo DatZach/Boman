@@ -18,7 +18,7 @@ draw_rectangle(0, 0, width, height, false);
 if (backdrop != noone)
 {
     draw_set_alpha(intensity / targetIntensity);
-    draw_background(backdrop, 0, 0);
+    draw_sprite(backdrop, 0, 0, 0);
 }
 
 draw_set_alpha(1);

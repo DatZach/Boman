@@ -4,16 +4,7 @@
     "mvc": "1.0",
     "name": "pPlatformingSolid",
     "eventList": [
-        {
-            "id": "251c360a-145e-4e4a-a72f-f67bace1e9db",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 0,
-            "m_owner": "fe94cfc8-84e6-43a5-b6ad-db09c1f103a8"
-        }
+        
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

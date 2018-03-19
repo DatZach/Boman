@@ -5,16 +5,6 @@
     "name": "oTarget",
     "eventList": [
         {
-            "id": "825aaf10-87a6-4129-8ef6-e20717f60c53",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 0,
-            "m_owner": "f40fa966-4521-499d-9256-785b268c6a9f"
-        },
-        {
             "id": "68829a82-6eae-45db-9670-3db6541c83db",
             "modelName": "GMEvent",
             "mvc": "1.0",

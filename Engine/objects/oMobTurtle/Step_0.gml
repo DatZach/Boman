@@ -36,10 +36,11 @@ else
     }
 }
 
-action_inherited();
+/// Handle Platforming
+
+event_inherited();
+
 /// Handle animations
 
 image_xscale = dir;
 sprite_index = iff(immobile, sMobTurtleImmobile, sMobTurtleIdle);
-
-

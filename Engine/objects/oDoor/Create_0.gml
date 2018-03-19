@@ -1,4 +1,3 @@
-action_inherited();
 /// Initialization
 
 group = "";
@@ -8,4 +7,4 @@ locked = false;
 if (!RELEASE_MODE)
     alarm[0] = 1;
 
-
+event_inherited();

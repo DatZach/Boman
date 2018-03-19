@@ -1,4 +1,3 @@
-action_inherited();
 /// Initialize physics
 
 InitializePhysicsEntity(

@@ -24,8 +24,9 @@ if (place_meeting(x, y, oPlayer))
     }
 }
 
+// Handle Platforming
+event_inherited();
 
-action_inherited();
 ///Image Handling
 
 // Draw the appropriate sprites:

@@ -25,5 +25,3 @@ ConsoleAddCommand(debugConsole, "maxstats", DBG_MaxStats);
 ConsoleAddCommand(debugConsole, "toggle-hp", DBG_ToggleShowHP);
 ConsoleAddCommand(debugConsole, "nc", DBG_ToggleNoClip);
 ConsoleAddCommand(debugConsole, "kill-player", DBG_KillPlayer);
-
-

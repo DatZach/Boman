@@ -2,7 +2,7 @@
 {
     "name": "rInitialize",
     "id": "34f4d950-8876-4368-8552-82d766a681c5",
-    "creationCodeFile": "",
+    "creationCodeFile": "RoomCreationCode.gml",
     "inheritCode": false,
     "inheritCreationOrder": false,
     "inheritLayers": false,

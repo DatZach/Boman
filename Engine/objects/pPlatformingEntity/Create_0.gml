@@ -1,5 +1,5 @@
-action_inherited();
 /// Platforming Initialization
+event_inherited();
 
 PLAYER_NUMBER = 0;
 
@@ -37,5 +37,3 @@ xsave = 0;
 ysave = 0;
 
 dynPlatformLedgeGrabInst = noone;
-
-

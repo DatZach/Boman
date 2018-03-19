@@ -23,6 +23,8 @@
     else
         undefeatable = false;
     
+	event_inherited();
+	
     maxHp = _hp;
     hp = maxHp;
     level = _level;

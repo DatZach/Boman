@@ -1,1 +1,0 @@
-action_inherited();

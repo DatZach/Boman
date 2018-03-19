@@ -25,4 +25,4 @@ if (dying)
         instance_destroy();
 }
 
-action_inherited();
+event_inherited();
