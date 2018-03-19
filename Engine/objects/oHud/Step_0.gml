@@ -44,7 +44,7 @@ if (CheckKey(global.k_toggle_item_overlay, E_PRESS))
     if (itemOverlayEnabled)
     {
         var metadata = GetCurrentRoom();
-        layer = metadata[? "tile-z"];
+        mapLayer = metadata[? "tile-z"];
     }
 }
 
@@ -103,7 +103,7 @@ if (enabled)
         itemIndex = 0;
         windowOffset = 0;
         var metadata = GetCurrentRoom();
-        layer = metadata[? "tile-z"];
+        mapLayer = metadata[? "tile-z"];
         
         ++menuTabIndex;
         if (menuTabIndex >= HudMenuTab.Count)
@@ -114,7 +114,7 @@ if (enabled)
         itemIndex = 0;
         windowOffset = 0;
         var metadata = GetCurrentRoom();
-        layer = metadata[? "tile-z"];
+        mapLayer = metadata[? "tile-z"];
     
         --menuTabIndex;
         if (menuTabIndex < 0)
@@ -152,9 +152,9 @@ if (enabled)
         var metadata = GetCurrentRoom();
         if (HasFlag(metadata[? "flags"], RoomFlags.Dungeon))
         {
-            --layer;
-            if (layer < 0)
-                layer = 0;
+            --mapLayer;
+            if (mapLayer < 0)
+                mapLayer = 0;
         }
     }
     else if (CheckKey(global.k_down, E_PRESS) && menuTabIndex == HudMenuTab.Map)
@@ -164,9 +164,9 @@ if (enabled)
         if (HasFlag(metadata[? "flags"], RoomFlags.Dungeon))
         {
             var layers = global.dungeonMaps[? metadata[? "group-id"]];
-            ++layer;
-            if (layer >= ds_list_size(layers))
-                layer = ds_list_size(layers) - 1;
+            ++mapLayer;
+            if (mapLayer >= ds_list_size(layers))
+                mapLayer = ds_list_size(layers) - 1;
         }
     }
 }

@@ -265,7 +265,7 @@ switch(menuTabIndex)
             DrawDungeonMap(
                 mapLeft,
                 mapTop,
-                layer,
+                mapLayer,
                 ds_list_find_index(global.dungeonReveals, metadata[? "group-id"]) != -1,
                 ds_list_find_index(global.dungeonCompasses, metadata[? "group-id"]) != -1
             );

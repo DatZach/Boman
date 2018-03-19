@@ -17,7 +17,7 @@ draw_sprite(sHudMapOverlay, 0, width / 2, height / 2);
 DrawDungeonMap(
     dmLeft,
     dmTop,
-    layer,
+    mapLayer,
     ds_list_find_index(global.dungeonReveals, metadata[? "group-id"]) != -1,
     true
 );

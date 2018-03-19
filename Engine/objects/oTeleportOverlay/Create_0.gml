@@ -1,9 +1,9 @@
 /// @description  Initialize
 
 var metadata = GetCurrentRoom();
-layer = metadata[? "tile-z"];
+mapLayer = metadata[? "tile-z"];
 
-var r = FindShrineInMap(0, 0, layer, vk_right);
+var r = FindShrineInMap(0, 0, mapLayer, vk_right);
 xx = r[0];
 yy = r[1];
 

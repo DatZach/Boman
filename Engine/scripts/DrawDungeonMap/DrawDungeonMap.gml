@@ -1,4 +1,4 @@
-/// @description  DrawDungeonMap(left, top, layer, revealed, compass);
+/// @description  DrawDungeonMap(left, top, mapLayer, revealed, compass);
 /// @function  DrawDungeonMap
 /// @param left
 /// @param  top

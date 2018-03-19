@@ -62,7 +62,7 @@ itemIndex = 0;
 windowOffset = 0;
 
 // DUNGEON MAP VARIABLES
-layer = 0;
+mapLayer = 0;
 
 intensity = 0;
 targetIntensity = 0;

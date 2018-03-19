@@ -2,13 +2,13 @@
 
 if (CheckKey(global.k_left, E_PRESS))
 {
-    var r = FindShrineInMap(xx, yy, layer, vk_left);
+    var r = FindShrineInMap(xx, yy, mapLayer, vk_left);
     xx = r[0];
     yy = r[1];
 }
 else if (CheckKey(global.k_right, E_PRESS))
 {
-    var r = FindShrineInMap(xx, yy, layer, vk_right);
+    var r = FindShrineInMap(xx, yy, mapLayer, vk_right);
     xx = r[0];
     yy = r[1];
 }
@@ -18,11 +18,11 @@ else if (CheckKey(global.k_up, E_PRESS))
     var groupId = metadata[? "group-id"];
     var layerCount = ds_list_size(global.dungeonMaps[? groupId]);
     
-    ++layer;
-    if (layer >= layerCount)
-        layer = 0;
+    ++mapLayer;
+    if (mapLayer >= layerCount)
+        mapLayer = 0;
     
-    var r = FindShrineInMap(0, 0, layer, vk_right);
+    var r = FindShrineInMap(0, 0, mapLayer, vk_right);
     xx = r[0];
     yy = r[1];
 }
@@ -32,11 +32,11 @@ else if (CheckKey(global.k_down, E_PRESS))
     var groupId = metadata[? "group-id"];
     var layerCount = ds_list_size(global.dungeonMaps[? groupId]);
     
-    --layer;
-    if (layer <= 0)
-        layer = layerCount - 1;
+    --mapLayer;
+    if (mapLayer <= 0)
+        mapLayer = layerCount - 1;
     
-    var r = FindShrineInMap(0, 0, layer, vk_right);
+    var r = FindShrineInMap(0, 0, mapLayer, vk_right);
     xx = r[0];
     yy = r[1];
 }
